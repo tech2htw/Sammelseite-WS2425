@@ -34,6 +34,14 @@ a {
   background-size: 50%;
 }
 
+/* Small only */
+@media screen and (max-width: 375px) {
+  #card {
+    width: 80vw;
+    min-width: 320px;
+  }
+}
+
 #map-container {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
