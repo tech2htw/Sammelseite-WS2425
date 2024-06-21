@@ -3,6 +3,8 @@ html {
 	width: 100%;
 	font-family: 'Inter', sans-serif;
   color: #ffffff;
+  hyphens: auto;
+  text-wrap: balance;
 }
 
 
@@ -13,18 +15,24 @@ html {
 	padding: 1rem;
 	margin: 3rem auto;
 	background-color: #0e1621;
-	border: 1px solid #eee;
-	
-	
+	border: 1px solid #eee;	
 }
+
+/* Small only */
+@media screen and (max-width: 375px) {
+  #card {
+    width: 98vw;
+  }
+}
+
 .datensaetze {
-  padding-left: 1 rem;
+  padding-left: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  padding-right: 1 rem;
+  padding-right: 1rem;
   word-break: break-all;
-             margin-left: 1 rem;
-  }
+  margin-left: 1rem;
+}
 
 
 textxs {
@@ -34,6 +42,7 @@ textxs {
   
   color: #d6d6d6;
 }
+
 h1 {
   padding-left: 1rem;
 	font-size: 2.7rem;
@@ -102,7 +111,7 @@ h2 a {
 
 .container {
   display: grid;
-  grid-template-columns: 7fr 4fr;
+  grid-template-columns: repeat(7fr 4fr);
   width: 1vw;
   height: auto;
   padding: 1rem;
