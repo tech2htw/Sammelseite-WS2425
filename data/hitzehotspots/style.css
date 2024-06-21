@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+#card {
+
+  width: 80vw;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 3rem;
+  margin: 2rem auto;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+
+
+}
+
+
+h1 {
+  font-size: 2rem;
+  text-align: left;
+
+  color: #000000;
+
+}
+
+
+h2 {
+  font-size: 1, 5rem;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+h2 a {
+  color: #0061ff;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+a {
+  color: #000000;
+
+}
+
+
+#map-container {
+
+  height: 240px;
+  background-color: #ffffff;
+}
+
+.kontakt {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  float: left;
+
+}
+
+.kontakt img {
+  vertical-align: middle;
+}
+
+.kontakt a {
+  text-decoration: none;
+  color: #0061ff;
+  margin-left: 0, 5rem;
+}

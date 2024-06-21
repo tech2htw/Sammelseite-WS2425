@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Kriminalitätsanayse</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+	</style>
+
+	<!-- Laden von Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<!-- Laden von jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+	<div id="card">
+		<div id="x">
+     
+      
+      
+
+			
+			<h1>Kriminalitsanalyse in Berliner Bezirken im Kontext mit Familien</h1>
+      <div class="box">
+        <span>Wechsel den Modus:</span>
+        <!-- HTML-Button mit CSS-Klasse für flachen abgerundeten Button -->
+        <button id="style1Button" onclick="toggleText()" class="flat-button">Raube nach Bezirk</button>
+      </div>
+      
+		</div>
+     
+		<!-- Leerer Container in den nachher meine Map kommt -->
+		<div id="map-container"></div>
+
+    <div id="Legende"></div>
+
+
+
+    
+    <div class="container">
+      <div class="leftside">
+		<p>Diese interaktive Karte stellt die Raubüberfälle und die Anzahl an Schüler:innen in Berliner Bezirken in Zusammenhang, um eine Antwort auf die Frage zu finden, in welchen Bezirken die Kriminalität für Familien erhöht ist. <br> Alle Schulen in Berlin werden als Punkte angezeigt. Zudem gibt es 2 Farbmodi der Karte. In Rottönen wird die Gesamtzahl an Raubüberfällen je Bezirk im Jahr 2022 angezeigt. In Orangetönen wird die Gesamtzahl an Raubüberfällen je Bezirk auf die Gesamtzahl an Schüler:innen je Bezirk in % angezeigt. Zusätzliche Infos werden in Popups angezeigt.<br>
+      Generell sind alle Werte niedrig und wir sehen Unterschiede von circa 1% bei den Rauben je Bezirk auf die Gesamtzahl von Schüler:innen je Bezirk. Zudem ist es ein komplexer Sachverhalt, bei dem viele Faktoren eine Rolle spielen, die man in für eine ganzheitliche Betrachtung einfließen lassen sollte. Daher ist diese Auswertung ein Ansatz.<br>
+      An der Karte sieht man auch, dass die absolute Anzahl von Familien keinen Einfluss auf die Kriminalität hat. <br>  
+      Friedrichshain-Kreuzberg hat sowohl insgesamt als auch nur auf die Schüler:innen bezogen die mit Abstand höchste Kriminalität. Gefolgt wird dieser Wert in beiden Auswertungen von Berlin Mitte. <br>
+      Steglitz-Zehlendorf ist, nach den vorliegenden Daten, der sicherste Bezirk in Berlin, sowohl insgesamt, als auch auf Familien bezogen. <br>
+      In den Gebieten Spandau und Pankow ist die Kriminalität für Familien leicht erhöht. <br>
+      In den Bezirken Neukölln und Charlottenburg-Wilmersdorf können wir den gegenteiligen Trend wahrnehmen. In diesen ist die Gesamtanzahl an Raubüberfällen leicht erhöht. Für Familien ist es Statistisch sicherer, als der Gesamtwert. <br>
+      Insgesamt kann man aus der Karte schlussfolgern, dass die Außenbezirke von Berlin in beiden Auswertungen relativ sicher sind.
+      
+		</p>
+		
+       </div>
+        <div class="rightside">
+          <img src="img/Legende.png" class="picX">
+          
+
+           
+          <div class="datensaetze">
+          <textxs>Datensätze: <br>
+            Raube: Kriminalitätsatlas der Polizei Berlin von 2022     
+          
+        
+            https://www.kriminalitaetsatlas.berlin.de/K-Atlas/bezirke/atlasbez.html;
+            Einwohner nach Bezirk: Wikipedia, Bevölkerung von Berlin 
+            von 31.12.2022 https://de.wikipedia.org/wiki/Bevölkerung_von_Berlin; Schüler:innen nach Bezirk vom Amt für Statistik 
+            Berlin Brandenburg Daten vom Schuhljahr 2020/21 https://www.statistik-berlin-brandenburg.de/gesellschaft/bildung/schulen
+            
+            </textxs></div>
+          </div>
+
+      
+      
+      
+          
+        </div>
+
+    <div class="box2">
+    <div class="kontakt">
+      <a target="_blank"  href="https://www.maxmoeckel.com">
+        Meine Webseite
+      </a>
+    </div>
+
+    <div class="kontakt">
+
+      <a href="mailto:mail@maxmoeckel.com">
+        Meine Email
+      </a>
+      </div>
+    </div>
+      </div>
+
+
+    
+		</p>
+   
+		
+
+	<script src="0-setup.js"></script>
+	<script src="3-kieze.js"></script>
+	<script src="1-bezirke.js"></script>
+	<script src="4-schulen.js"></script>
+  <script src="button.js"></script>
+  
+  <script src="../../script.js"></script>
+</body>
+
+</html>

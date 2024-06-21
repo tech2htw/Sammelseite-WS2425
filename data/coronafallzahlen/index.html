@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Coronafallzahlen in den Berliner Bezirken</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+  </style>
+  
+  
+  <!-- Laden von Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Laden von jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="card">
+    <h1>Coronafallzahlen</h1>
+    <h2>in den Berliner Bezirken</h2>
+
+		<!-- Leerer Container in den nachher meine Map kommt --> 
+		<div id="map-container"></div>
+   
+    <p class="copytext">
+Die <b>Coronafallzahlen</b> in den Berliner Bezirken zeigen eine variierte Dynamik. Bezirke wie <i>Friedrichshain-Kreuzberg</i> und <i>Mitte</i> verzeichnen hohe Fallzahlen und Inzidenzen, während andere wie <i>Steglitz-Zehlendorf</i> und <i>Reinickendorf</i> niedrigere Zahlen aufweisen. Insgesamt wurden in Berlin bisher <b>1.459.951 Fälle</b> gemeldet, mit einer Inzidenz von <b>39.699</b> pro 100.000 Einwohner.
+    </p>
+
+
+		
+  <div class="kontakt">
+    <img src="img/mail.svg" class="icon">
+    <a href="mailto:finja.marie.hansen96@gmail.com">
+      Meine Email
+    </a>
+  </div>
+</body>
+  <script src="script.js"></script>
+  <script src="chroma.js"></script>
+  <script src="0-setup.js"></script>
+  <script src="1-bezirke.js"></script>
+  <script src="corona.js"></script>
+
+  <script src="../../script.js"></script>
+</html>

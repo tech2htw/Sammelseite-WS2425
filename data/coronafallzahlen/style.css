@@ -1,0 +1,69 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Tahoma', sans-serif;
+}
+
+#card {
+  width: 80vw; 
+  max-width: 600px;
+  background-color: #fff2d5;
+  padding: 1rem;
+  border: 50px solid #fff2d5;
+  margin: 3rem auto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 20px #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 0;
+  color: #000000
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 0.4rem;
+  color: #000000;
+  font-weight: 400;
+
+  }
+
+.copytext {
+  color: #000000; /* Farbe des Textes */
+  font-size: 1rem;
+}
+
+h2 a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  }
+
+#map-container {
+  height: 240px;
+  background-color: ghostwhite
+  }
+
+.kontakt  {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  float: left;
+}
+
+.kontakt img {
+  vertical-align: middle;
+  }
+
+.kontakt a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 0.5rem;
+  }
+
+
+  
+  

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>BROKEN LIFTS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+	</style>
+
+	<!-- Laden von Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<!-- Laden von jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="card">
+		<h1>BROKEN LIFTS</h1>
+		<h2>Welche
+			<a target="_blank"  href="http://brokenlifts.org">Aufzüge</a> sind heute defekt?
+		</h2>
+
+		<!-- Leerer Container in den nachher meine Map kommt -->
+		<div id="map-container"></div>
+
+		<div class="kontakt">
+			<img src="img/Aufzug_keinZugang.svg" class="icon" width="32px">
+			Kein barrierefreier Zugang möglich
+			</a>
+		</div>
+
+		<div class="kontakt">
+			<img src="img/Aufzug_defekt.svg" class="icon" width="32px">
+			Defekter Aufzug | weitere Aufzüge vorhanden
+			</a>
+		</div>
+		<div class="clear"></div>
+		
+		<p>
+			Defekte Aufzüge an Bahnhöfen sind für Menschen die auf Rollstühle und Gehhilfen angewiesen sind, aber auch
+			Familien mit Kinderwagen, ein großes Problem. Deshalb ist es wichtig, rechtzeitig von Ausfällen zu erfahren.
+
+			Aus diesem Grund entstand <b>BrokenLifts</b> – ein Projekt des Vereins <b>SOZIALHELDEN</b> und des
+			Verkehrsverbund Berlin-Brandenburg in Zusammenarbeit mit dem Projektbüro <b>.HENKELHIEDL</b> zur
+			automatisierten Visualisierung von Aufzugausfällen im öffentlichen Personennahverkehr in Berlin.
+
+			Als Datenbasis werden viertelstündlich die Aufzugstörungsinformationen der Berliner S-Bahn und der BVG
+			abgerufen, analysiert und gebündelt.
+		</p>
+		<p>Die von <b>BrokenLifts</b> veröffentlichen Daten wurden hier im Rahmen des, Technologien Moduls an der HTW
+			Berlin als Kartenansicht visualisiert. Zwar hat Berlin nur noch wenige Bahnstationen ohne Aufzug oder andere
+			barrierefreie Zugangsmöglichkeiten, doch die Realität sieht oft anders aus. Meistens sind weitaus mehr
+			Stationen nicht zugänglich, weil Aufzüge technische Störungen haben und diese oft über mehrere Tage gesperrt
+			werden. Die Karte bildet also ab welche Stationen tatsächlich aktuell nicht oder teilweise nicht
+			barrierefrei zugänglich sind. Dabei wird deutlich welchen Hindernissen Menschen begegnen die in ihrem
+			Alltag auf barrierefreie Zugangswege angewiesen sind. Die Daten in dieser Karte sind vom 11.12.2023 um 15:00
+			Uhr.
+		</p>
+
+		<div class="kontakt">
+			<img src="img/home.svg" class="icon">
+			<a target="_blank"  href="http://brokenlifts.org">
+				BrokenLifts
+			</a>
+		</div>
+
+		<div class="kontakt">
+			<img src="img/mail.svg" class="icon">
+			<a href="mailto:lisabruestle@t-online.de">
+				Meine Email
+			</a>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+	
+	<script src="js/leaflet.mask.js"></script>
+	<script src="script.js"></script>
+	<script src="0-setup.js"></script>
+	<script src="1-bezirke.js"></script>
+	<!-- <script src="3-kieze.js"></script> -->
+	<script src="5-keinZugang.js"></script>
+	<script src="6-Aufzug-defekt.js"></script>
+
+	<script src="../../script.js"></script>
+</body>
+
+</html>

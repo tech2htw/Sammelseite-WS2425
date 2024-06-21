@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Datenvisualisierung erster Teil</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap');
+  </style>
+
+  <!-- Laden von Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Laden von jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="card">
+  <h1>Gewalt gegen Frauen im Verhältnis zu Frauenhäusern </h1>
+  <h2> Daten bezogen aus folgenden Seiten
+    <a target="_blank" href="https://service.berlin.de/standorte/sozialaemter/">Link</a>
+  </h2>
+
+  <!--Leerer Container in den nachher meine Map kommt-->
+  <div id="map-container"> </div>
+
+ 
+    
+
+  <p> <b> Die Betroffenen partnerschaftlicher Gewalt sind überwiegend weiblich, bei familiärer Gewalt ist die
+      Geschlechterverteilung weniger ungleich</b>
+
+  </p>
+  <p> Von partnerschaftlicher Gewalt sind ganz überwiegend, zu 79,3 %, Frauen und Mädchen betroffen. Bei
+    innerfamiliärer Gewalt machen weibliche Opfer 55,7 % der Opfer aus, männliche Opfer 44,3 %. Mit Blick auf die
+    Altersgruppen sind jüngere Erwachsene zwischen 21 und
+    40 Jahren bei partnerschaftlicher Gewalt am stärksten betroffen. Bei innerfamiliärer Gewalt sind Jugendliche,
+    Heranwachsende und Kinder deutlich stärker betroffen als ältere Menschen.
+
+    Zwischen 2013 und 2022 erfasste die Polizei Berlin jährlich durchschnittlich zwölf durch männliche Tatverdächtige
+    gegen weibliche Betroffene verübte Tötungsdelikte, 2022 wurden 15 derartige Fälle erfasst.
+
+    Partnerschaftliche und innerfamiliäre Gewalt findet im ganzen Berliner Stadtgebiet statt. Unter den am stärksten
+    belasteten Bezirken sind Spandau, Mitte, Marzahn-Hellersdorf, Neukölln und Reinickendorf.
+  </p>
+      <img src= "img/HandlungsräumederGemeinschaftsinitiative.png" class= "legende-bild"> <b> Handlungsräume der Gemeinschaftsinitiative </b>
+
+      <p>
+
+        <div class = "Gebiete mit besonderem Aufmerksamkeitsbedarf">
+          <img src= "img/GebietemitbesonderemAufmerksamkeitsbedarf.png" class= "legende-bild">  <b>Gebiete mit besonderem Aufmerksamkeitsbedarf </b>
+      </p>
+
+          <p>
+
+            <div class = "Gebiete mit der ungünstigsten Sozialstruktur">
+              <img src= "img/GebietemitderungünstigstenSozialstruktur.png" class= "legende-bild"> <b>Gebiete mit der ungünstigsten Sozialstruktur</b>
+          </p>
+  <p>
+
+  <div class="Kontakt">
+    <img src="img/home.svg" class="icon">
+
+    <a target="_blank"  href="https://lauraschowe.wixsite.com/meinewebsite/portfolio-collections/my-portfolio/project-title-4">
+      Kontakt
+
+    </a>
+
+  </div>
+
+
+  <div class="Kontakt">
+    <img src="img/mail.svg" class="icon">
+
+
+    <a href="https://lauraschowe.wixsite.com/meinewebsite">
+      Mail</a>
+  </div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+<script src="0-setup.js"></script>
+<script src="0-wms.js"></script>
+<script src="1-bezirke.js"></script>
+<script src="2-icons.js"></script>
+<script src="3-kieze.js"></script>
+
+<script src="../../script.js"></script>
+</body>
+
+
+
+
+</html>

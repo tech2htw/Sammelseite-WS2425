@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+#card{
+width: 80vw;
+  max-width: 600px;
+  background-color: #ffffff;
+padding:3rem;
+  margin: 2rem auto;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px #e0e0e0; 
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+color: #000000;  
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 0.4rem;
+  font-weight: 400;
+  color: #434242; 
+}
+h2 a{
+  font-family: 'Oswald', sans-serif;
+color: #7c7af0;
+  text-decoration: none;
+  font-weight: 700; 
+}
+#map-container {
+  height: 400px;
+  background-color: #e8e8e8; 
+}
+
+.kontakt {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  float: left;
+  
+
+}
+.kontakt img {
+  vertical-align: middle;
+}
+.kontakt a {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #7c7af0;
+  margin-left: 0.5rem;
+}

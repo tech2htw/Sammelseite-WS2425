@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Aufzüge intakt": 3,
+        "Aufzüge defekt": 1
+      },
+      "geometry": {
+        "coordinates": [
+          13.32097025881913,
+          52.456788694689976
+        ],
+        "type": "Point"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          13.3250625601882,
+          52.46147499386032
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

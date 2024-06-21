@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Radtote2023</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<!--font von google eingefügt-->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;700&display=swap');
+	</style>
+
+	<!-- Laden von Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<!-- Laden von jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="card">
+		<h1>GETÖTETE RADFAHRENDE 2023</h1>
+		<h2>und ihre Todesursache
+			<!--link in h2, den man in css unter h2a einzeln bearbeiten kann-->
+			<a href=></a>
+		</h2>
+
+		<!--leerer Container in den nachher meine Map kommt-->
+		<div id="map-container"></div>
+		<!--paragraph-->
+		<p>
+			Fahrradfahren ist in Deutschlands Großstädten leider mit vielen Risiken verbunden. In den letzten 10 Jahren (2012-22) waren allein in Berlin im Schnitt ca. <b>7.477 Radfahrer*innen im Jahr</b>* an Verkehrsunfällen beteiligt. In 2023 sind in Berlin <b>14</b> dieser Unfälle <i>tödlich</i> für die Radfahrer*innen geendet.<br> Dass die riesige Zahl an Unfällen maßgeblich an fehlender Radinfrastruktur und im Allgemeinen an zu vielen Autos in Städten liegt, ist sehr naheliegend. Jedoch leider nicht die Erkenntnis, die ich hatte, als ich mir die Unfälle genauer anschaut habe, welche für die Radfahrer*innen <i>tödlich</i> endeten. <br> Dabei fällt auf, dass fast die Hälfte der Unfallopfer einen Altersdurchschnitt von 71 Jahren hatten und "ohne Fremdeinwirkung" (so die Polizei) verstorben sind. <br> Natürlich sind bei mehr als der Hälfte der Unfälle immernoch PKWs, LKWs und Busse beteiligt, aber ich hatte bei der Ursachenuntersuchung ehrlich gesagt mit einem größeren Anteil an fremder Unfallbeteiligung gerechnet.
+<br> <br> <br> <br> *laut Statista
+		</p>
+
+		<div id="links">
+			<div class="kontakt">
+				<!--bild einfügen mit class für style-->
+				<img src="img/search.svg" class="icon">
+				<!--hyperlinks-->
+				<a target="_blank" 
+					href="https://adfc-berlin.de/radverkehr/sicherheit/information-und-analyse/145-unfallorte/1155-getoetete-radfahrende-2023.html">
+					Quellen </a>
+			</div>
+
+			<div class="kontakt">
+				<img src="img/@.svg" class="icon">
+				<a href="mailto:dariusvb@gmx.de">meine mail</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<script src="js/leaflet.mask.js"></script>
+
+	<script src="0-setup.js"></script>
+	<script src="1-bezirke.js"></script>
+	<!--   <script src="3-kieze.js"></script>
+ -->
+	<!-- 	<script src="5-mapradtote.js"></script>
+ -->
+	<script src="6-mapradtotelkw.js"></script>
+	<script src="7-mapradtotepkw.js"></script>
+	<script src="8-mapradtotebus.js"></script>
+	<script src="9-mapradtoteohne.js"></script>
+
+	<script src="../../script.js"></script>
+</body>
+
+</html>

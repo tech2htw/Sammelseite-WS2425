@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Datenvisualisierung erster Termin </title>
+<link href=style.css rel="stylesheet"
+  type="text/css"/>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
+
+  <!-- Laden von Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Laden von jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  
+</head>
+  
+<body>
+  <div id="card"> 
+    <h1> Verhältnismäßigkeiten von Kieztaten und psychosoziale Hilfsangebote   </h1> 
+  <h2> Eine Arbeit von <a target="_blank"  href="https://www.linkedin.com/in/clara-trölsch-0864261b6/?originalSubdomain=de">Clara Trölsch</a> </h2> 
+    
+    <!-- <h3> dritte Überschrift </h3> -->
+    <div id="map-container">  </div>
+
+    <div class="skala"> 
+        <img src="img/skala3.png"class="skala">
+    </div>
+
+    
+      <p><b>  Wie verhält sich die Anzahl der Kieztaten auf die Anzahl </br> der Psychosozialen Hilsangebote eines Kiez's?  </b>   </p>
+  
+      <p> Im Rahmen des Kurses Technologie 2 habe ich in 
+          dieser </br> Karte die Zusammenhänge dieser zwei Faktoren 
+          dargelegt. </br> Umso heller die Farbe des Kiez's ist, umso 
+          höher ist die </br>  Diskrepanz zwischen den Werten  
+          dieser zwei Faktoren. Gesättigtere Bereiche zeigen, 
+          wo die Diskrepanz niedriger ist und es mehr 
+          Hilfsangebote in Relation zu den vorkommenden 
+          Kieztaten gibt. Dazu habe ich noch einmal in die Pop-Ups geschrieben was, abseits von der Relation zwischen diesen beiden Werten der Gesamtanteil dieser beider Werte am gesamten Berliner Vorkommen je Kiez ist.</p>
+      <p> 
+  </p>
+
+    <div class="kontakt"> 
+      <img src="img/home.svg" class="icon">
+      <a target="_blank"  href="https://de.statista.com/statistik/daten/studie/1120140/umfrage/kieztaten-in-berlin-nach-bezirken/#:~:text=Im%20Jahr%202022%20gab%20es,Tatort%20und%20Wohnort%20des%20T%C3%A4ters."> <b> Kieztaten Statistik </b> </a> 
+    </div>
+    
+    <div class="kontakt"> 
+        <img src="img/send.svg"class="icon">
+        <a href="mailto:c.troelsch@gmx.de">
+        <b> Schreib mir </b> </a> 
+    </div>
+
+    
+      
+    </div> 
+
+    
+  </div>
+       
+  <script src="script.js"></script>
+  <script src="0-setup.js"></script>
+  <script src="1-bezirke.js"></script>
+
+  <script src="../../script.js"></script>
+</body>
+
+</html>

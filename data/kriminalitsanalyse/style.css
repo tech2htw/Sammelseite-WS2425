@@ -1,0 +1,181 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+
+#card {
+	width: 80vw;
+	min-width: 320px;
+	max-width: 600px;
+	padding: 1rem;
+	margin: 3rem auto;
+	background-color: #0e1621;
+	border: 1px solid #eee;
+	
+	
+}
+.datensaetze {
+  padding-left: 1 rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-right: 1 rem;
+  word-break: break-all;
+             margin-left: 1 rem;
+  }
+
+
+textxs {
+  clear: all;
+   font-size: 10px;
+  word-break: break-all;
+  
+  color: #d6d6d6;
+}
+h1 {
+  padding-left: 1rem;
+	font-size: 2.7rem;
+  padding-bottom: -30px;
+  padding-top: 1rem;
+  font-size: 2.7rem;
+	line-height: 2.5rem;
+	text-align: left;
+	color: #ffffff;
+}
+
+
+p {
+  text-align: left;
+}
+
+a {
+  text-align: left;
+}
+
+h2 a {
+	color: #e20074;
+	text-decoration: none;
+	font-weight: 700;
+  color: #ffffff;
+}
+
+#map-container {
+	height: 400px;
+	background-color: #0e1621;
+}
+
+.kontakt {
+  vertical-align: middle;
+  display: flex; /* Flexbox-Layout */
+  align-items: center;
+}
+
+.Legende {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  
+  float: left;
+}
+
+.pic {
+  width: 5vw;
+}
+
+
+.kontakt img {
+  padding-left: 1 rem;
+	vertical-align: middle;
+}
+
+.kontakt a {
+  text-align: left;
+	text-decoration: none;
+	color: #c0c0c0;
+	
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 7fr 4fr;
+  width: 1vw;
+  height: auto;
+  padding: 1rem;
+  
+}
+
+.box {
+  padding-left: 1rem;
+   padding-bottom: 2rem;
+  display: flex; /* Flexbox-Layout */
+  align-items: center; 
+  gap: 10px;
+   
+}
+
+
+.box2 {
+  justify-content: center;
+  padding-top: 1rem;
+   padding-bottom: 2rem;
+  display: flex; /* Flexbox-Layout */
+  align-items: center; 
+  gap: 23px;
+
+}
+
+.leftside {
+  width: 335px;
+  float: justify;
+}
+
+.rightside {
+  
+  margin-top: 7px;
+  margin-left: 1rem;
+  position: relative;
+}
+
+
+ .picX{
+    height: 570px;
+  }
+  
+  
+.leaflet-container  {
+  border: 1px solid #444444;
+ }
+.RaubeaufSchülerinnen { font-size: 40px; }
+
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+   border: 0px ;
+  text-align: left;
+  border-radius: 0px !important;
+  }
+
+.flat-button {
+  background-color: #aaaaaa; /* Hintergrundfarbe des Buttons */
+  color: #ffffff; /* Textfarbe des Buttons */
+  border: 0px !important; /* Rand des Buttons */
+  border-radius: 20px; /* Abgerundete Ecken */
+  padding: 10px 20px; /* Innenabstand des Buttons */
+  cursor: pointer; /* Cursor-Effekt bei Hover */
+  transition: background-color 0.3s, color 0.3s; /* Übergangseffekte für Hintergrund- und Textfarbe */
+}
+
+.flat-button:hover {
+  background-color: #f0f0f0; /* Hintergrundfarbe ändert sich bei Hover */
+  color: #555555; /* Textfarbe ändert sich bei Hover */
+}
+
+.flat-button:active {
+  background-color: #e0e0e0; /* Hintergrundfarbe ändert sich beim Klicken */
+  color: #666666; /* Textfarbe ändert sich beim Klicken */
+}
+
