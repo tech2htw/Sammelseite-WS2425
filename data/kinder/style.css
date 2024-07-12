@@ -21,6 +21,13 @@ html {
    
 }
 
+@media screen and (max-width: 600px) {
+  #card {
+    width: 80vw;
+    min-width: 320px;
+  }
+}
+
 h1{
   text-align: center;
   font-size: 36pt;
