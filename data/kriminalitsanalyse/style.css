@@ -18,13 +18,6 @@ html {
 	border: 1px solid #eee;	
 }
 
-/* Small only */
-@media screen and (max-width: 375px) {
-  #card {
-    width: 98vw;
-  }
-}
-
 .datensaetze {
   padding-left: 1rem;
   margin-left: 1rem;
@@ -111,7 +104,7 @@ h2 a {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(7fr 4fr);
+  grid-template-columns: 7fr 4fr;
   width: 1vw;
   height: auto;
   padding: 1rem;
@@ -188,3 +181,15 @@ h2 a {
   color: #666666; /* Textfarbe ändert sich beim Klicken */
 }
 
+
+/* Small only */
+@media screen and (max-width: 480px) {
+  #card {
+    width: 84vw;
+    min-width: 300px;
+  }
+
+  .container {
+    display: contents;
+  }
+}
