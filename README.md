@@ -1,6 +1,6 @@
 # tech2sammel
 ## Technologien 2 - Datenvisualisierung
-### Wintersemester 2023/2024
+### Wintersemester 2024/2025
 
 Hier werden die gesammmelten Ergebnisse des Kurses
 Datenvisualisierung präsentiert. Der Kurs findet im Rahmen des
