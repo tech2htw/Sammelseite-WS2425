@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d91af75d31ebdb1f9547ac9c7c21dca169cb1d1b50428cd89ab857827c76f33
-size 552
+function handleFeature(feature, layer) {
+    // Hier können Sie Interaktionen definieren, wie Popups oder Tooltips
+}
+
+$.getJSON("maps/denkmal.geojson", function(data) {
+    var denkmalSpez = L.geoJSON(data, {
+        style: function (feature) {
+            return {
+                color: "#ffffff",
+                weight: 10,
+                fillColor: "#ffffff",
+                fillOpacity: 1
+            };
+        },
+        onEachFeature: handleFeature // Korrekte Funktionsreferenz
+    }).addTo(map);
+    
+    denkmalSpez.bringToFront();
+});
+

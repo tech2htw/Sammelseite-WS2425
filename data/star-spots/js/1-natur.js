@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c5ab6574ee16d22d914961f1f92391a77bf70aa6b0e3dd2c9df44925db4db37
-size 640
+
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentation zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/natur.geojson", function (data) {
+	var mapnatur = L.geoJSON(data, {
+		style: function (feature) {
+			return {
+				color: "#00a707",
+				weight: 0.4,
+				fillColor: "#00a707",
+				fillOpacity: 1
+		
+			};
+		},
+		onEachFeature: funktionennatur
+	}).addTo(map);
+});
+
+
+
+// Hier eine bei der Einbindung erwähnte Funktion die wir onEachFeature, also für jedes eingetragene Feature (also jeden Bezirk) ausführen möchten
+function funktionennatur(feature, layer) {
+
+}
+
+

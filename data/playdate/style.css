@@ -1,3 +1,90 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba35b73c82112bde9b79b97fca8c5a625657b22818a34c9f7ecdebf661495b18
-size 1216
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Inter', Verdana, Geneva, Tahoma, calc()Haettenschweiler;
+font-weight: bold;
+
+}
+
+#card {
+	width: 80vw;
+	max-width: 600px;
+	background-color: #fff8d2;
+	padding: 3rem;
+	margin: 2rem auto;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 0px 0px 24px #fd7979;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+	color: #29a3a9;
+}
+
+h2 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	font-weight: 400;
+}
+
+h2 a {
+	color: #0d0d0d;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#map-container {
+	height: 460px;
+	background-color: #fff8d2;;
+}
+
+.kontakt {
+	margin-top: 1rem;
+	margin-right: 2rem;
+	float: left;
+}
+
+.kontakt img {
+	vertical-align: middle;
+}
+
+.kontakt a {
+	text-decoration: none;
+	color: #fd7979;
+	margin-left: 0.5rem;
+}
+
+.clear {
+	clear: both;
+}
+
+h3 {
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
+
+#Checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: stretch;
+  user-select: none;
+  -webkit-user-select: none;  
+}
+
+#Checkboxes label {
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 4px;
+  width: 160px;
+  background-color: #fd7979;
+  color: #fff8d2;
+}
+
+hr {
+	margin: 32px 0;
+}

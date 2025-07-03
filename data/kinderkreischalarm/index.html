@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7e30529ce83802c639b98b0d3ad9fc230aeb4f315d57044de8919eb6814c7dd
-size 2616
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Leben ohne Kinderlärm</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>KinderKreischAlarm</h1>
+			<h2>
+				Wohnen ohne lärmende Kinder
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			<p> 2023 lebten 602.476 Kinder und Jugendliche im Alter von 0 bis 17 Jahren in Berlin. Für einige Einwohner
+				sind Kinder allerdings nichts anderes als eine Quelle ständigen Lärms. In der Nähe einer <span class="Kita">Kita</span> 
+				zu wohnen, kann bedeuten, einen Lärmpegel von bis zu 117 dB auszuhalten. Die einen hören bezauberndes Kinderlachen, 
+				andere fühlen sich eher belästigt. Diese Personen könnten jetzt jeden Tag an die Türen der <span class="Kita">Kitas</span> und 
+				<span class="Schule">Schulen</span> klopfen, sich über die Lautstärke beschweren, Einsatzkräfte der Polizei von wichtigen Notfällen 
+				abhalten und Eltern belästigen. Oder sie ziehen um!
+			</p>
+			<p> 	
+				Um diesen Menschen den Umzug innerhalb Berlins auf diesem äußerst entspannten und ertragreichen 
+				Wohnungsmarkt zu erleichtern, gibt es die KinderKreischAlarm-Karte. Hier sind <span class="Schule">Schulen</span> 
+				und <span class="Kita">Kindergärten</span>   in 
+				Wohngegenden markiert und mit einem Umkreis von 100 Metern eingezeichnet, der verdeutlicht, welche 
+				Wohnzonen gemieden werden müssen, um von Kindern und Jugendlichen nicht gestört zu werden.
+				
+			</p>
+
+			<div class="kontakt">
+				<img src="img/download-svgrepo-com.svg" class="icon" />
+				<a href="https://"> Download Karte </a>
+			</div>
+
+
+			<div class="clear"></div>
+		</div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/2-Kita.js"></script>
+		<script src="js/3-Schulen.js"></script>
+		<script src="js/4-Wohnen.js"></script>
+		<script src="js/5-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

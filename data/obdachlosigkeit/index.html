@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Datenvisualisierung mit Hallenbädern</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>Obdachlosigkeit in Berlin</h1>
+			<h2>
+				Wo sich die meisten Obdachlosen aufhalten und wo sie einen Obdach finden, findest du hier heraus
+				
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+
+			<div id="map-container"></div>
+
+			
+
+			<div id="legendeGesamt">
+				<div class="legende">
+					<div id="wenigBelastet" class="legendeKasten"></div>
+					<p>wenig belastet</p>
+				</div>
+
+				<div class="legende">
+					<div id="mittelBelastet" class="legendeKasten"></div>
+					<p>mittel belastet</p>
+				</div>
+
+				<div class="legende">
+					<div id="schwerBelastet" class="legendeKasten"></div>
+					<p>schwer belastet</p>
+				</div>
+			</div>
+
+			<p>
+				Obdachlosigkeit ist ein komplexes gesellschaftliches Problem, das auch in einer wohlhabenden Metropole
+				wie Berlin stark präsent ist. Schätzungen zufolge leben etwa 7.000 Menschen ohne Obdach auf der Straße. In dieser Datenvisualisierung werfen wir einen Blick auf die Verteilung
+				von Aufenthaltsorten für obdachlose Menschen in den verschiedenen Berliner Bezirken. 
+			</p>
+			<p>
+				
+				Dabei zeigen wir,
+				in welchen Bezirken die meisten dieser Einrichtungen – wie Notunterkünfte, Tagesstätten oder soziale
+				Treffpunkte – vorhanden sind und wie sie sich geografisch verteilen. Außerdem beleuchten wir, in welchen
+				Bezirken sich die meisten obdachlosen Menschen aufhalten.
+			    Die Analyse soll mögliche Zusammenhänge zwischen der Verfügbarkeit von Einrichtungen und der Konzentration obdachloser Personen aufzeigen. 
+			</p>
+
+			<div class="kontakt">
+				<img src="img/home.svg" class="icon" />
+				<a href="https://www.kaeltehilfe-berlin.de/images/Ubersicht%20NUs%202024_ab_Dezember_.pdf"> Quelle </a>
+			</div>
+
+			<div class="kontakt">
+				<img src="img/mail.svg" class="icon" />
+				<a href="mailto:sbiera.chiva14@yahoo.com"> Meine Email </a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/2-standorte.js"></script>
+		<script src="js/3-land.js"></script>
+	</body>
+</html>

@@ -1,3 +1,149 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f89408adb81bc5b0bdb78a09d9f9d64065aef24dc86e0dcff0cfef5e23ebe70e
-size 2514
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+}
+
+#card {
+	width: 80vw;
+	max-width: 600px;
+	background-color: #0000000d;
+	padding: 3rem;
+	margin: 2rem auto;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 0px 0px 24px #ddddf482;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+	color: #000;
+}
+
+h2 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	font-weight: 400;
+}
+
+h2 a {
+	color: #2F6DAC;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#map-container {
+	height: 460px;
+	background-color: #00000000;;
+}
+<style>
+    #legend {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    #legend h3 {
+        margin: 0 0 10px 0;
+    }
+
+    #legend ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #legend li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .legend-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border-radius: 3px;
+    }
+
+    .red-square {
+        background-color: #262020;
+    }
+
+   .burial-icon {
+    display: inline-block;
+    width: 20px; /* oder die gewünschte Größe */
+    height: 20px; /* oder die gewünschte Größe */
+    background: url('img/Friedhof.png') no-repeat center center;
+    background-size: contain; /* Sorgt dafür, dass das Icon vollständig sichtbar ist */
+}
+
+    }
+
+/* Styling der Liste */
+.friedhof-list {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+    display: none; /* Liste initial ausblenden */
+}
+
+.friedhof-list a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 2px;
+}
+
+.friedhof-list a:hover {
+    background-color: #f0f0f0;
+}
+
+.toggle-list-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 100%;
+}
+
+.toggle-list-button:hover {
+    background-color: #e2e2e2;
+}
+
+</style>
+
+
+.kontakt {
+	margin-top: 1rem;
+	margin-right: 2rem;
+	float: left;
+}
+
+.kontakt img {
+	vertical-align: middle;
+}
+
+.kontakt a {
+	text-decoration: none;
+	color: #ac2f2f;
+	margin-left: 0.5rem;
+}
+
+.clear {
+	clear: both;
+}

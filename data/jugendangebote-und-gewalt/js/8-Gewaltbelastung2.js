@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2768e675476333c5dd7ca7d249c1d105554ddaa61d08ca01c3caca0bdc432d6
-size 612
+$.getJSON("maps/Gewaltbelastung2.geojson", function (data) {
+	var mapGewaltbelastung2 = L.geoJSON(data, {
+		style: function (feature) {
+			return {
+				color: "#000000",
+				weight: 0.4,
+				fillColor: "#a5a0ee",
+				fillOpacity: 1
+			};
+		},
+		onEachFeature: funktionenGewaltbelastung2
+	}).addTo(map);
+});
+
+// Hier eine bei der Einbindung erwähnte Funktion die wir onEachFeature, also für jedes eingetragene Feature (also jeden Bezirk) ausführen möchten
+function funktionenGewaltbelastung2(feature, layer) {
+	layer.setStyle({
+		fillOpacity: feature.properties["points_count"] / 5
+	});
+}

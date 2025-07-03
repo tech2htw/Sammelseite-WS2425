@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:518df425f96c120a6bf296e37be5624ab48d29fc32429450f67f70435fc3f6b4
-size 816
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentaion zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/spielplaetze.geojson", function(data) {
+	var mapHTW = L.geoJSON(data, {
+	style: {},
+	pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: iconPlay});
+	},
+		onEachFeature: funktionenStandorte,
+	}).addTo(map);
+});
+
+// Einbinden des Piktogramm als Icon
+var iconPlay = L.icon({
+	iconUrl: 'img/playground-svgrepo-com.svg',
+	iconSize: [16],
+});
+
+// Diese Funktion wird für jedes Feature ausgeführt (Popup anbinden an jeden Standort)
+function funktionenStandorte(feature, layer){
+	var titel;
+
+
+
+	var content = 	"<b>"
+					+ "Spielplatz"
+					+ "</b><br>" 
+					+ feature.properties["planname"];
+
+	layer.bindPopup(content);
+}
+

@@ -1,3 +1,183 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:847b27192b6ddda743a00243ad3c302f58fed88c065c615345045676942a6c97
-size 6343
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Umweltgerechtigkeit</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="card">
+			<div id="map-container"></div>
+
+			<hr />
+			<hr />
+			<hr />
+			<hr />
+			<hr />
+			<hr />
+			<hr />
+			<hr />
+			<h1>Umweltgerechtigkeit</h1>
+			<h2>Wer trägt die Last der Umweltbelastungen in Berlin?</h2>
+
+			<!-- Map-Container wurde hier entfernt -->
+
+			<br />
+			<!-- Aufklappbarer Bereich -->
+			<div class="accordion-container">
+				<button class="accordion">▼ Mehr zum Thema</button>
+				<div class="panel">
+					<p>
+						Umweltgerechtigkeit bedeutet, dass alle Menschen unabhängig von ihrem sozialen oder
+						wirtschaftlichen Status Zugang zu einer gesunden Umwelt haben. <br />
+						Diese interaktive Karte zeigt, wie verschiedene Umweltbelastungen in Berlin auf die
+						Planungsräume verteilt sind und wie sie mit dem Erwerbs- und Sozialindex zusammenhängen.
+
+						<br />
+						<br />
+						<b>Warum ist das Thema wichtig?</b>
+						<br />Umweltungerechtigkeit zeigt sich oft dort, wo Menschen mit niedrigem Sozialstatus
+						unverhältnismäßig stark von Umweltbelastungen betroffen sind. Diese Karte hilft dabei
+						Ungleichheiten sichtbar zu machen: Welche Gebiete sind besonders belastet, und wie hängt das mit
+						sozialen Faktoren zusammen?
+					</p>
+				</div>
+				<br />
+				<br />
+				<button class="accordion">▼ Tipps zur Bedienung und Interpretation der Karte</button>
+				<div class="panel">
+					<p>
+						<b>1. Farblegende: </b><br />
+						Die Planungsräume sind farblich codiert von rosa (geringe Belastung) bis dunkelrot (hohe
+						Belastung) und zeigen die Gesamtbewertung der Umweltbelastungen an.
+						<br />
+						<br />
+						<b
+							>2.
+							<a href="https://www.berlin.de/umweltatlas/mensch/umweltgerechtigkeit/2022/zusammenfassung/"
+								>Umweltbelastung</a
+							>:</b
+						><br />
+						Klicken Sie auf einen Planungsraum, um detaillierte Informationen über Grünflächen,
+						Lärmbelastung, Bioklima und Luftqualität in diesem Gebiet zu sehen. So erfahren Sie mehr über
+						die spezifischen Herausforderungen in diesem Bereich.
+						<br />
+						<br />
+						<b
+							>3.
+							<a
+								href="https://www.berlin.de/sen/wgp/presse/2022/pressemitteilung.1199238.phpSozial- und Erwerbsstatus"
+								>Sozial- und Erwerbsstatus</a
+							> </b
+						><br />
+						Nutzen Sie das Dropdown-Menü, um Gebiete mit einem bestimmten Sozial- und Erwerbsstatus
+						hervorzuheben. Der ausgewählte Status wird mit einer dunklen Transparenz dargestellt.<br />
+						<br />
+						Der Indexwert wir aus 20 Indikatoren aus den Dimensionen Erwerbsleben (z. B. Arbeitslosenquote),
+						soziale Lage (z. B. Empfang von Grundsicherung) und Gesundheit (z. B. Lebenserwartung) gebildet.
+						Je niedriger der Indexwert, desto höher ist der Sozial- und Erwerbsstatus.
+						<br />
+
+						<br />
+						<b>4. Erholungsorte und Grünflächen: </b><br />
+						In stark belasteten Gebieten der Innenstadt werden Erholungsorte und Grünflächen als
+						Marker angezeigt. Klicken Sie auf die Pins, um den Namen und die Adresse des jeweiligen
+						Erholungsorts anzuzeigen.
+					</p>
+				</div>
+			</div>
+
+			<!-- Gesundheits- und Sozialindex -->
+
+			<div class="dropdown"></div>
+
+			<select id="filter-dropdown">
+				<option value="all">▼ Wählen Sie einen Indexwert zum Sozial- und Erwerbsstatus</option>
+				<option value="1">1 - günstig</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7 - ungünstig</option>
+			</select>
+			<div id="map" style="height: 18px"></div>
+			<br />
+
+			<!-- Legende -->
+			Stärke der Umweltbelastung:
+
+			<meta charset="UTF-8" />
+			<title>Box-Modell erkunden</title>
+			<link href="css-box-modell.css" rel="stylesheet" />
+			<div id="bereich1">gering</div>
+
+			<meta charset="UTF-8" />
+			<title>Box-Modell erkunden</title>
+			<link href="css-box-modell.css" rel="stylesheet" />
+			<div id="bereich2">einfach</div>
+
+			<meta charset="UTF-8" />
+			<title>Box-Modell erkunden</title>
+			<link href="css-box-modell.css" rel="stylesheet" />
+			<div id="bereich3">zweifach</div>
+
+			<meta charset="UTF-8" />
+			<title>Box-Modell erkunden</title>
+			<link href="css-box-modell.css" rel="stylesheet" />
+			<div id="bereich4">dreifach</div>
+
+			<meta charset="UTF-8" />
+			<title>Box-Modell erkunden</title>
+			<link href="css-box-modell.css" rel="stylesheet" />
+			<div id="bereich5">vierfach</div>
+
+			<br />
+
+			<hr align="center" size="0.4" width="611" noshade="noshade" />
+
+			<div class="clear"></div>
+
+			<div class="Loredana">
+				Eine Arbeit von Loredana Zafisambondaoky <br /><br />
+				<img src="img/folder.svg" class="icon" />
+				<a href="https://www.loredana.work"> Portfolio </a>
+				<img src="img/mail.svg" class="icon" />
+				<a href="mailto:mail@loredana.work"> Email </a>
+				<img src="img/person_search.svg" class="icon" />
+				<a href="https://www.linkedin.com/in/loredanazafisambondaoky/"> LinkedIn </a> <br />
+			</div>
+		</div>
+
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/2-standorte.js"></script>
+		<script src="js/3-land.js"></script>
+		<script src="js/4-umwelt.js"></script>
+		<script src="js/5-gesundheit.js"></script>
+		<script src="js/6-umweltplr.js"></script>
+		<script src="js/7-Erholungsorte.js"></script>
+		<script src="js/8-bedienung.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

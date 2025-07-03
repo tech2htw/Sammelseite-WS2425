@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9d1562f9471809e020d4ea736b32671fcf3602410262d59e8d4122fbf2dbc7a
-size 719
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentation zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/bezirke.geojson", function (data) {
+	var mapBezirke = L.geoJSON(data, {
+		style: function (feature) {
+			return {
+				color: "#2F6DAC",
+				weight: 0.4,
+				fillColor: "#f72d82",
+				fillOpacity: 1
+			};
+		},
+		onEachFeature: funktionenBezirke
+	}).addTo(map);
+
+});
+
+// Hier eine bei der Einbindung erwähnte Funktion die wir onEachFeature, also für jedes eingetragene Feature (also jeden Bezirk) ausführen möchten
+function funktionenBezirke(feature, layer) {
+	layer.setStyle({
+		fillOpacity: feature.properties["points_count"] / 5
+	});
+}
+
+

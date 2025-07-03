@@ -1,0 +1,122 @@
+html {
+	height: 100%;
+	width: 100%;
+	font-family: bungee ;
+}
+
+#card {
+
+	width: 80vw;
+	max-width: 600px;
+	background-color: rgba(102, 45, 255, 0.47);
+	padding: 3rem;
+	margin: -2rem auto;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 0px 0px 24px #c7c7c7;
+}
+
+h1 {
+
+	font-size: 49px;
+	text-align: center;
+	margin: 0;
+	color: #e1ff00;
+}
+
+h2 {
+	font-family: 'arial', sans-serif;
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.8rem;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+h2 a {
+	font-family: 'arial', sans-serif;
+	color: #2F6DAC;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#map-container {
+	height: 426px;
+background-color: #e1ff00;
+}
+
+p1 {
+	font-family: 'arial', sans-serif;
+	color: #ffffff;
+	margin-top: 9px;
+	margin-bottom: -33px;
+	text-align: right
+	
+	
+	
+}
+
+
+p {
+	font-family: 'arial', sans-serif;
+	color: #ffffff;
+	margin-top: 28px;
+	margin-bottom: -6px;
+	
+	
+}
+
+.kontakt {
+	margin-top: 4rem;
+	margin-right: 2rem;
+	float: left;
+}
+
+.kontakt img {
+	vertical-align: middle;
+}
+
+.kontakt a {
+	text-decoration: none;
+	color: #e1ff00;
+	margin-left: 0.7rem;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
+#legendeGesamt {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#legendeGesamt p {
+	margin: 0;
+	padding-top: 5px; 
+}
+#legendeGesamt .legendeKasten {
+
+	height: 44px;
+	width: 47%;	
+	margin-top: 13px
+}
+
+#wenigBelastet {
+
+	background-color: #ffafff;
+}
+
+#mittelBelastet {
+
+	background-color: #ff00e1;
+}
+
+#schwerBelastet {
+	background-color: #ac0097;
+}

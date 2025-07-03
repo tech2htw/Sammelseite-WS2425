@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb620ae30610f834466f18367379772deb9fa9c3d0cdee708cb53b37c97fc428
-size 1321
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Futura', sans-serif;
+	background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+#card {
+	width: 80vw;
+	max-width: 600px;
+	background-color: #ffffffdd;
+	padding: 2.5rem;
+	margin: 3rem auto;
+	border-radius: 12px;
+	box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+	border: 2px solid #ffa07a;
+}
+
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 0;
+	color: #ff6f61;
+	text-shadow: 2px 2px #ffe5dc;
+}
+
+h2 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 0.5rem;
+	color: #ff8c42;
+	font-weight: 400;
+}
+
+h2 a {
+	color: #ff4500;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+#map-container {
+	height: 460px;
+	background-color: #c8f8ff;
+	border: 2px solid #ff8c42;
+	border-radius: 10px;
+	box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 1rem;
+}
+
+.kontakt {
+	margin-top: 1.5rem;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.kontakt img {
+	vertical-align: middle;
+	margin-right: 8px;
+	height: 24px;
+}
+
+.kontakt a {
+	text-decoration: none;
+	color: #ff6f61;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+	transition: color 0.3s ease;
+}
+
+.kontakt a:hover {
+	color: #ff3d00;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Hover-Effekt für Karte */
+#map-container:hover {
+	background-color: #c8f8ff;
+	box-shadow: inset 0 4px 14px rgba(0, 0, 0, 0.2);
+}

@@ -1,3 +1,72 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f7359f2d8a1ce4ded26b453073b2b2429aba74bfd32f522424a514db0d5e250
-size 1027
+html {
+	height: 100%;
+	width: 100%;
+	font-family: Courier New;
+}
+
+#card {
+	width: 80vw;
+	max-width: 600px;
+	background-color: #dbe2e2;
+	padding: 3rem;
+	margin: 2rem auto;
+	border: 5px solid #85107b;
+	border-radius: 4px;
+	box-shadow: 0px 0px 24px #c7c7c7;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+	color: #85107b;
+}
+
+h2 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	font-weight: 400;
+	color: #000000;
+}
+
+h2 a {
+	color: #7d1967;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.Schule {
+    font-weight: bold; /* Fett machen */
+    color: rgba(134, 95, 7, 0.87);        /* Textfarbe ändern */	
+}
+.Kita {
+    font-weight: bold; /* Fett machen */
+    color: #85107b;        /* Textfarbe ändern */
+	}
+
+#map-container {
+	height: 460px;
+	background-color: #ffffff;
+}
+
+.kontakt {
+	margin-top: 1rem;
+	margin-right: 2rem;
+	float: left;
+}
+
+.kontakt img {
+	vertical-align: middle;
+	width: 16px;
+}
+
+.kontakt a {
+	text-decoration: none;
+	color: #85107b;
+	margin-left: 0.5rem;
+}
+
+.clear {
+	clear: both;
+}

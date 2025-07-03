@@ -1,3 +1,78 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d3c9ca7b717d9592aa291a3e64aa88a311705eec399a548f67e7bc1cd41ad9a
-size 2612
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Datenvisualisierung mit Hallenbädern</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>Jugendfreizeiteinrichtungen Berlin</h1>
+			<h2>
+				mehr Infos unter diesem
+				<a href="https://familienportal.berlin.de/informationen/jugendfreizeiteinrichtungen-in-berlin-289">Link</a>
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			
+			<p>
+			<div id="legende"></div>
+			<div id="beschriftung">
+				<span>niedrig</span>
+				<span class="rechts">niedrig</span>
+			</div>
+			
+		
+			<p>
+				Auf dieser Karte finden Sie alle <b>Jugendfreizeiteinrichtungen</b> in Berlin. 
+				Je nach Stadtteil variiert, wie gut diese soziale Hilfe für Kinder und Jugendliche ausgeprägt ist. Tief rot bedeutet eine hohe dichte an Einrichtungen und hell-rot eine niedrige.
+			</p>
+			<p>
+				Jugendfreizeiteinrichtungen bieten einen sicheren Ort für junge Menschen, um ihre Freizeit sinnvoll zu gestalten und sich von problematischen Einflüssen fernzuhalten. 
+				Zudem fördern sie die Prävention von Kriminalität und Gewalt, indem sie den Jugendlichen positive Freizeitmöglichkeiten und Perspektiven bieten. 
+				So tragen sie zu einer lebenswerten, inklusiven und sicheren Stadtgesellschaft bei.
+			</p>
+
+			<div class="kontakt">
+				<img src="img/home.svg" class="icon" />
+				<a href="https://www.instagram.com/meritrabe/"> Meine Webseite </a>
+			</div>
+
+			<div class="kontakt">
+				<img src="img/mail.svg" class="icon" />
+				<a href="mailto:merit.rabe@student.htw-berlin.de"> Meine Email </a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/2-standorte.js"></script>
+		<script src="js/3-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>
+

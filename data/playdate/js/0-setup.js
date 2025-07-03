@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e06940fc34536fc7c0f40cb6099653a92991596e3463782aebc98347af9dad1
-size 597
+// Map Container anbinden und konfigurieren
+// Mehr Info: https://leafletjs.com/reference.html#map-example
+
+var map = L.map('map-container', { 
+	center: [52.52, 13.42], 
+	zoom: 10,
+	minZoom: 9,
+	maxZoom: 12
+});
+
+map.zoomControl.setPosition('bottomleft');
+
+function toggleLayer(layer, id) {
+  map.removeLayer(layer);
+  var checkbox = document.querySelector(id);
+  checkbox.addEventListener("change", toggle);
+
+  function toggle(e) {
+    var state = e.target.checked;
+    console.log(state);
+
+    if (state == true) {
+      map.addLayer(layer);
+    } else {
+      map.removeLayer(layer);
+    }
+  }
+}

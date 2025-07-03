@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d883c9a6325c673c7ca2d40badfe329b93dc63016358d0287c0cb19880de0311
-size 379
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentation zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/land.geojson", function (data) {
+	var mapLand = L.geoJSON(data, {
+		style: function (feature) {
+			return {
+				color: "#ef7f7f",
+				weight: 5,
+				interactive: false
+			};
+		},
+	}).addTo(map);
+});
+
+
+
+

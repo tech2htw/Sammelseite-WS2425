@@ -1,3 +1,78 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98b05799aed206c727be95ce87bbbdaea35118cdd169e0735eb62653d235d838
-size 898
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#card {
+	width: 80vw;
+	max-width: 600px;
+	background-color: #0100cc;
+	padding: 3rem;
+	margin: 2rem auto;
+	border: 1px solid #eee;
+	border-radius: 40px;
+	box-shadow: 2px 2px 50px #ffe200;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+h2 a {
+	color: #ffe200;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#map-container {
+	height: 460px;
+	background: radial-gradient(#ffff, #0100cc);
+	
+}
+p {
+	color: #ffffff;
+	
+}
+
+
+.kontakt { 
+	margin-top: 1rem;
+	margin-right: 7rem;
+
+	
+	width: 27px;
+	height: auto; 
+	float: left;
+
+
+	
+}
+
+.kontakt img {
+	vertical-align: middle;
+	float: right;
+
+}
+
+.kontakt a {
+	text-decoration: none;
+	margin-left: 6rem;
+	color: #ffffff;
+
+}
+
+.clear {
+	clear: both;
+}

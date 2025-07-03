@@ -1,3 +1,86 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5f499eeaf0efa68e3ee9e758dda5beccfec032d1b14ec2021c8855f3328f801
-size 2253
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Datenvisualisierung mit Hallenbädern</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<b><h1>Playdate</h1></b>
+			<h2>
+				Play dates für Kinder
+				
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			
+			
+			<h3>Ebenen ein- und ausschalten</h3>
+<div id="Checkboxes">
+	<label>
+		<input type="checkbox" id="Checkboxtoiletten" checked>
+		Toiletten
+	</label>
+	<label>
+		<input type="checkbox" id="CheckboxGruenanlagen" checked>
+		Grünanlagen
+	</label>				
+	<label>
+		<input type="checkbox" id="CheckboxSpielplatz" checked>
+		Spielplätze
+	</label>
+</div>
+<hr>
+			
+			
+			<p>
+				<b> Playdate </b>ist eine App, mit der Eltern Spieltreffen für ihre Kinder ausmachen können.
+			</p>
+			<p>
+				Mit deer praktischen Kartenfunktion, sieht man alles was wichtig für ein Play date ist, auf einen Blick. Grünflächen, Spielplätze und öffentliche Toiletten sind dabei die Faktoren im Fokus, eben alles was für Kinder wichtig ist, wenn sie draußen spielen.
+			</p>
+			
+			<div class="kontakt">
+				<img src="img/home.svg" class="icon" />
+				<a href="https://www.instagram.com/ritchienicks/"> Instagram </a>
+				
+			</div>
+
+			
+
+			<div class="clear"></div>
+		</div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<!--<script src="js/2-standorte.js"></script>-->
+		<script src="js/3-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>
+
+
+

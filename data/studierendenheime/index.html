@@ -1,3 +1,96 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:012b364e0094c2f808f95e912d2083c29446f37152ab3651e7340ce1c802decc
-size 3030
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Studieren in Berlin</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		 #map-container {
+    		height: 600px;
+    	}
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>Studieren und Wohnen in Berlin</h1>
+			<h2>
+				Zwischen teuren Mieten und langen Fahrtwegen
+			</h2>
+			
+			
+		  <div id="map"></div>
+
+		  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+		  <script>
+			// Karte initialisieren
+			const map = L.map('map').setView([52.5003, 13.3939], 10);
+
+			// OpenStreetMap Tiles hinzufügen
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			  attribution: '&copy; OpenStreetMap contributors'
+			}).addTo(map);
+
+		  </script>
+			
+			<div class="legende">
+				<img src="img/house_yellow.svg" class="icon" />
+				<a><b>Studierendenwohnheime</b></a>
+			</div>
+			
+			<div class="legende">
+				<img src="img/Circle_Orange.svg" class="icon" />
+				<a><b>Universitäten/Hochschulen</b></a>
+			</div>
+			
+			
+			<p>
+				Berlin ist eine der beliebtesten Städte für Studierende in Deutschland und zieht jedes Jahr Zehntausende
+				junge Menschen aus dem In- und Ausland an. Die Hauptstadt bietet zahlreiche Universitäten und Hochschulen,
+				aber der Zugang zu <b>bezahlbarem Wohnraum</b> ohne weite Wege bleibt für viele Studierende eine große Herausforderung. 
+			</p>
+			<p>
+				Das Ziel dieser Karte ist es, eine Übersicht über die Standorte der Berliner Universitäten und Hochschulen
+				sowie der Studentenwohnheime zu verschaffen. Sie soll Studierenden eine Orientierung bieten, um passende
+				Wohnmöglichkeiten in der Nähe ihrer Bildungseinrichtungen zu finden.
+			</p>
+
+			<div class="kontakt">
+				<img src="img/home.svg" class="icon" />
+				<a href="https://www.nestpick.com/de/student-accommodation/berlin/"> Finde deine Unterkunft!</a>
+			</div>
+
+			<div class="kontakt">
+				<img src="img/mail.svg" class="icon" />
+				<a href="mailto:emily.erdbeer@gmx.de"> Meine Email </a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-Bezirksinfo.js"></script>
+		<script src="js/2-Hochschulen.js"></script>
+		<script src="js/3-Wohnheime.js"></script>
+		<script src="js/4-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

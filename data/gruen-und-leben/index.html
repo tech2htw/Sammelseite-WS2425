@@ -1,3 +1,151 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:280b939113c256479c44baa273986d51f165ee99252cd688671eccff30249196
-size 3792
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Grün und Gesundheit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+	</style>
+
+	<!-- Laden von Leaflet -->
+	<link
+		rel="stylesheet"
+		href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+		crossorigin="" />
+	<script
+		src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+		crossorigin=""></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous">
+    </script>
+	<script src="js/leaflet.mask.js"></script>
+
+	<!-- Custom Inline Styles -->
+	<style>
+		body {
+			font-family: 'Inter', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* 체크박스 컨테이너 스타일 */
+		#checkbox-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 20px auto;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			background-color: #f9f9f9;
+			width: 300px;
+		}
+
+		#checkbox-container label {
+			font-size: 16px;
+			color: #333;
+			margin-left: 10px;
+		}
+
+		#checkbox-container input[type="checkbox"] {
+			transform: scale(1.5);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="card">
+		<h1>Grün & Leben</h1>
+
+		<!-- 체크박스 컨테이너 -->
+		<div id="checkbox-container">
+			<input type="checkbox" id="pflegecheckbox">
+			<label for="pflegecheckbox">Pflegeeinrichtungen anzeigen</label>
+		</div>
+
+		<!-- 지도 컨테이너 -->
+		<div id="map-container"></div>
+
+		<!-- 범례 컨테이너 -->
+		<div id="legend">
+			<div id="color-1"></div>
+			<div id="color-2"></div>
+			<div id="color-3"></div>
+			<div id="color-4"></div>
+			<div id="color-5"></div>
+			<div id="color-6"></div>
+			<div id="color-7"></div>
+			<div id="color-8"></div>
+			<div id="color-9"></div>
+			<div id="color-10"></div>
+		</div>
+		<div id="legend-info">
+			<p>Weniger Grün</p>
+			<p>Mehr Grün</p>
+		</div>
+
+		<!-- 설명 텍스트 -->
+		<div id="description">
+			<p>text 1</p>
+			<p>Text 2</p>
+		</div>
+	</div>
+
+	<!-- 사용자 스크립트 -->
+	<script>
+		// GeoJSON 데이터를 저장할 변수
+		var mapPflege = null;
+
+		// 체크박스 이벤트 리스너 추가
+		document.getElementById("pflegecheckbox").addEventListener("change", function() {
+			var isChecked = this.checked; // 체크박스 상태 확인
+
+			if (isChecked) {
+				// GeoJSON 데이터를 추가
+				$.getJSON("maps/pflege.geojson", function(data) {
+					mapPflege = L.geoJSON(data, {
+						pointToLayer: function(feature, latlng) {
+							return L.marker(latlng, {
+								icon: L.icon({
+									iconUrl: "img/yellow.svg", // 아이콘 파일 경로
+									iconSize: [20, 20] // 아이콘 크기
+								})
+							});
+						},
+						onEachFeature: function(feature, layer) {
+							var einrichtungName = feature.properties.einrichtung_name || "Unbekannt";
+							var strasse = feature.properties.gc_strasse || "Keine Adresse";
+
+							// 팝업 추가
+							layer.bindPopup(
+								<b>Einrichtung:</b> ${einrichtungName}<br>
+								 <b>Adresse:</b> ${strasse}
+							);
+						}
+					}).addTo(map);
+				});
+			} else {
+				// GeoJSON 데이터를 제거
+				if (mapPflege !== null) {
+					mapPflege.clearLayers();
+					mapPflege = null;
+				}
+			}
+		});
+	</script>
+
+	<script src="js/0-setup.js"></script>
+	<script src="js/1-bezirke.js"></script>
+	<script src="js/leaflet.mask.js"></script>
+	<script src="js/pflege.js"></script>
+
+	<script src="../../script.js"></script>
+</body>
+</html>

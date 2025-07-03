@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c51d3c62f22d2db1d37b3ec160f700a6d82ec254aef52630feca9da4b4c21b82
-size 782
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentaion zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/spots.geojson", function(data) {
+	var mapspots = L.geoJSON(data, {
+	style: {},
+	pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: iconSwimpants});
+	},
+	onEachFeature: funktionenspots,
+	}).addTo(map);
+});
+
+// Einbinden des Piktogramm als Icon
+var iconSwimpants = L.icon({
+	iconUrl: 'img/home.svg',
+	iconSize: [20],
+});
+
+// Diese Funktion wird für jedes Feature ausgeführt (Popup anbinden an jeden Standort)
+function funktionenspots(feature, layer){
+	var content = 	"<b>"
+					+ "STAR SPOTS"
+					+ "</b><br>" 
+					+ feature.properties["description"];
+
+	layer.bindPopup(content);
+}
+

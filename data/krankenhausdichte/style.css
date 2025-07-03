@@ -1,3 +1,163 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25caa42dc1505d934795539061b59acba009d52d3d000556dd60d1dfe48c5e5d
-size 2450
+html {
+	 height: 100%;
+  width: 100%;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  hyphens: auto;
+}
+
+#card {
+  width: 80vw;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 
+    -8px 0 0 0 black,   
+     8px 0 0 0 black,   
+     0 -8px 0 0 black,  
+     0 8px 0 0 black;  
+  text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 0;
+	color: #70b32c;
+}
+
+h2 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.4rem;
+	font-weight: 400;
+}
+
+h2 a {
+	color: #e20074;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#map-container {
+  height: 460px;
+  background-color: #fff;
+  box-shadow: 
+    -5px 0 0 0 black,   
+     5px 0 0 0 black,   
+     0 -5px 0 0 black,  
+     0 5px 0 0 black;   
+}
+
+.social-links {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 13vh;
+  gap: 20px; 
+}
+
+.kontakt {
+  display: flex; 
+  align-items: center; 
+}
+
+.kontakt img {
+  vertical-align: middle;
+  margin-right: 8px; 
+}
+
+.kontakt a {
+  text-decoration: none; 
+  color: #E20074;
+  font-size: 1.2rem; 
+}
+
+
+
+.toggle-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+}
+
+
+.toggle {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background-color: rgba(204, 204, 204, 0);
+  border: 4px solid black; 
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.toggle-knob {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #000000;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+/* Переключение в активное положение */
+.toggle.active {
+  background-color: #ffffff; 
+}
+
+.toggle.active .toggle-knob {
+  left: 42px;
+  background-color: #e20074;
+}
+
+
+.toggle-text {
+  color: black; 
+  transition: color 0.3s ease; 
+}
+
+.toggle.active ~ .toggle-text {
+  color: #e20074; 
+}
+
+#legende {
+  width: 100%;
+  height: 16px;
+background: linear-gradient(90deg, rgba(108,166,40,1) 0%, rgba(170,199,131,1) 100%);
+ border-radius: 2px;
+}
+
+#beschriftung{
+  font-size: 14px;
+  color: #444;
+}
+
+#beschriftung {
+    margin-top: 20px;
+}
+#beschriftung {
+    margin-top: 20px;
+}
+
+#beschriftung .rechts {
+  float: right;
+}
+#beschriftung .links {
+  float: left;
+}
+.clear {
+	clear: both;
+}

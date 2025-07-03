@@ -1,3 +1,80 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b27a685747863f13d6871fe765c64eb97c3bf900e930d0a8a6db7d8b2607b86
-size 1177
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #ffff;
+}
+
+
+#card {
+  width: 80vw;
+  max-width: 600px;
+  background-color: #cad2fd;
+  background:URL('img/WheatpastePaint.jpg');
+  background-size: cover;
+  padding: 3rem;
+  margin: 2rem auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 24px #c7c7c7;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  margin: 0;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+h2 a {
+  color: #2f6dac;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#map-container {
+  height: 460px;
+  background-color: rgba(0, 0, 0, 0.51);
+  border-radius: 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+h3 {
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
+
+#Checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: stretch;
+  user-select: none;
+  -webkit-user-select: none;  
+}
+
+#Checkboxes label {
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 4px;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.51);
+  color: #ffffff;
+}
+
+hr {
+	margin: 8px 0;
+    color: #000000ff;
+}
+

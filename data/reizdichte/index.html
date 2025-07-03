@@ -1,3 +1,92 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49b32059b72cf7ea5cb484433466c69980b87aba897ddd54e9412eafa3d1f414
-size 2477
+<!doctype html>
+<html lang="de">
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Reizdichte</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		</style>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+		</style>
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+		</style>
+		
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin></script>
+
+		<!-- Laden von jQuery -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="my_image"></div>
+		
+		<div id="card">
+			<h1>REIZDICHTE</h1>
+			
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+
+			<h3>Ebenen ein- und ausschalten:</h3>
+			
+			<div id="Checkboxes">
+				<label>
+					<input type="checkbox" id="CheckboxLaerm">
+					Lärmbelastung
+				</label>
+				<label>
+					<input type="checkbox" id="CheckboxLuft">
+					Luftbelastung
+				</label>
+				<label>
+					<input type="checkbox" id="CheckboxSperr">
+					Störungen
+				</label>		
+				<label>
+					<input type="checkbox" id="CheckboxRuhe">
+					Ruhebereiche
+				</label>								
+			</div>
+			
+
+			
+			<hr>
+			
+			<p>
+				Die Karte zeigt die Berliner Reizdichte anhand von <b>Störungen des Verkehrswesens</b> (letztes Update: 05.11.24), sowie der <b>Lärm- & Luftbelastung</b>. 
+				 <br><b>Ruhebereiche</b> (Grünflächen) zeigen, wo man der Belastung entkommen kann.  
+				<br> <br>Für mehr Informationen auf die Karte klicken.
+				
+			</p>
+			
+			<div class="clear"></div>
+		</div>
+
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-laerm.js"></script>
+		<script src="js/2-ruhig.js"></script>
+		<script src="js/3-luft.js"></script>
+		<script src="js/4-sperrung.js"></script>
+		<script src="js/5-basis.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

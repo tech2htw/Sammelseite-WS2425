@@ -1,3 +1,183 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:653d0f1fb81d4f722d9f0c84bb17e3f79aea452172b0a7407ed3a55e62c4f109
-size 5842
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Spielplätze in Berlin</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+        <style>
+            /* Schriftart Futura */
+            @font-face {
+                font-family: "Futura";
+                src:
+                    local("Futura"),
+                    url("https://fonts.cdnfonts.com/s/16025/FuturaBT-Light.woff") format("woff");
+            }
+
+            body {
+                font-family: "Futura", sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #ffecd2, #fcb69f);
+                color: #333;
+            }
+
+            h1 {
+                font-size: 3em;
+                margin-bottom: 0.5em;
+                text-align: center;
+                font-weight: 700;
+                color: #ff6f61;
+                text-shadow: 2px 2px #f8d9d1;
+            }
+
+            h2 {
+                font-size: 1.8em;
+                margin: 1em 0;
+                text-align: center;
+                font-weight: 400;
+                color: #ff8c42;
+            }
+
+            a {
+                color: #ff6f61;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            #card {
+                background: #ffffffdd;
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            #map-container {
+                height: 500px;
+                margin: 20px auto;
+                border: 2px solid #ff8c42;
+                border-radius: 12px;
+                background-color: #c8f8ff;
+                box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .info {
+                font-size: 1.2em;
+                margin-top: 20px;
+                text-align: justify;
+                color: #444;
+            }
+
+            .info p {
+                margin-bottom: 1em;
+            }
+
+            .highlight {
+                font-weight: 700;
+                color: #ff3d00;
+                background: #ffebcd;
+                padding: 2px 5px;
+                border-radius: 5px;
+            }
+
+            /* Dekorative Icons */
+            .decorative {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .decorative img {
+                height: 50px;
+                margin: 0 10px;
+                transform: rotate(10deg);
+                transition: transform 0.3s;
+            }
+
+            .decorative img:hover {
+                transform: rotate(0deg) scale(1.1);
+            }
+
+            .footer-bar {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background: #ff6f61;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+                box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .footer-bar a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+
+            .footer-bar a:hover {
+                text-decoration: underline;
+            }
+
+            .footer-bar img {
+                height: 20px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="card">
+            <h1>Spielplätze in Berlin</h1>
+            <h2>Gibt es genug Spielplätze für alle Kinder in Berliner Bezirken?</h2>
+
+            <!-- Leaflet Karte -->
+            <div id="map-container"></div>
+
+            <div class="info">
+                <p>
+                    In Berlin gibt es ca. <span class="highlight">1.900 öffentliche Spielplätze</span>, die Kindern zugänglich sind. Die Verteilung der Spielplätze ist jedoch nicht gleichmäßig: In den Bezirken, in denen viele Kinder leben, mangelt es oft an ausreichenden Spielmöglichkeiten.
+                </p>
+                <p>
+                    <span class="highlight">Pankow</span> hat die größte Zahl an Spielplätzen, während 
+                    <span class="highlight">Spandau</span> und <span class="highlight">Neukölln</span> Nachholbedarf haben. Unabhängig vom Bezirk tragen Spielplätze jedoch entscheidend zur Lebensqualität der Kinder bei.
+                </p>
+                <p>
+                    Mehr über Spielplätze in Berlin erfährst du 
+                    <a href="https://www.visitberlin.de/de/spielplaetze">hier</a>.
+                
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer-Bar -->
+        <div class="footer-bar">
+            <img src="https://img.icons8.com/color/48/email.png" alt="E-Mail-Icon" />
+            <a href="mailto:deine-email@example.com">Kontaktieren Sie mich per E-Mail</a>
+        </div>
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <script src="js/0-setup.js"></script>
+        <script src="js/1-bezirke.js"></script>
+        <script src="js/2-standorte.js"></script>
+
+        <script src="../../script.js"></script>
+
+    </body>
+</html>

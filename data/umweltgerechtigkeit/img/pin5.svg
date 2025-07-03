@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1313e074ed722168cb0140febc7e59a5f7e3aac86a82230030aa25ce441231af
-size 740
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1249.69 1773.47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #2f5b00;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_1-2" data-name="Ebene 1">
+    <path class="cls-1" d="M592.7.97c490.53-26.94,818.89,514.14,573.95,938.36l-540.31,834.07c-5.81,1.44-16.88-19.22-20.49-24.58-179.43-266.25-345.54-542.01-523.21-809.49C-147.51,535.87,128.88,26.44,592.7.97ZM596.19,313.34c-236.47,22.07-363.7,296.31-227.72,492.88,129.53,187.24,412.16,175.83,526.21-20.86,126.53-218.19-47.61-495.43-298.49-472.02Z"/>
+    <circle class="cls-2" cx="625.18" cy="626.48" r="345"/>
+  </g>
+</svg>

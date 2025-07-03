@@ -1,3 +1,311 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a69d7acdd585177ebe8ede9bfa26de4787cda8bb5ddf33e0b0b83c1eabc79705
-size 5264
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#card {
+  width: 80vw;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 4rem; /* Padding für die anderen Elemente */
+  margin: 1rem auto;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0px 0px 41px #c7c7c7;
+  position: relative; /* Wichtig für absolute Positionierung der Map */
+  overflow: hidden; /* Verhindert, dass die Map aus dem Container ragt */
+}
+
+#map-container {
+  position: absolute; /* Positioniert die Map unabhängig vom Padding */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 343px;
+  background-color: #ffffff; /* Beispielhintergrund */
+  border-radius: 0; /* Keine Eckenabrundung */
+  box-shadow: none; /* Kein Schatten */
+  z-index: 1; /* Stellt sicher, dass die Map hinter anderen Inhalten bleibt */
+}
+
+#card h1,
+#card p {
+  position: relative; /* Diese Elemente bleiben vom Padding beeinflusst */
+  z-index: 2; /* Inhalte erscheinen über der Map */
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 0;
+  color: #000;
+}
+
+h2 {
+  font-family: DM Sans;
+  letter-spacing: -0.02em;
+  font-size: 1.25rem;
+  text-align: left;
+  margin-top: 0.6rem;
+  font-weight: normal;
+}
+
+h2 a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: small;
+  text-decoration: none;
+}
+#map-container {
+  height: 343px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #ffffff;
+}
+
+.Loredana {
+  color: #000000;
+  font-family: DM Sans;
+  font-weight: 338;
+  font-size: small;
+  font-style: normal;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  float: left;
+}
+
+.Loredana img {
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+.Loredana a {
+  color: #000000;
+  margin-top: 2px;
+  margin-right: 26px;
+  text-decoration: none;
+}
+.kontakt {
+  font-family: DM Sans;
+  font-weight: 338;
+  font-size: small;
+  font-style: normal;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  float: left;
+}
+
+.kontakt img {
+  vertical-align: middle;
+}
+
+.kontakt a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 0.5rem;
+}
+
+.clear {
+  clear: both;
+}
+
+h3 {
+  font-size: small;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+
+hr {
+  margin: 32px 0;
+}
+
+p {
+  font-family: DM Sans;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.plr-name {
+  font-size: large;
+}
+
+/*Styling Popup*/
+
+/* Popup-Container */
+.leaflet-popup-content {
+  font-family: DM-Sans, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Titel des Popups */
+.leaflet-popup-content b {
+  font-size: 17px;
+  color: #000000;
+}
+
+.Umweltkategorie {
+  font-weight: regular;
+  display: inline-block;
+  width: 100px; /* Für Ausrichtung der Kategorien */
+}
+.Bewertung {
+  display: inline-block;
+  font-weight: 400;
+}
+
+/* Optional: Styling für Links in Popups */
+.leaflet-popup-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.leaflet-popup-content a:hover {
+  text-decoration: underline;
+}
+
+<!--Toolbar-- > .leaflet-bar a {
+  border: 1px solid #000078 !important;
+  color: #ff571d !important;
+}
+
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: 0px solid #ff571d !important;
+}
+
+.leaflet-bar a:hover,
+.leaflet-bar a:focus {
+  background-color: #ff571d !important;
+  color: #fff !important;
+}
+
+select {
+  font-family: DM sans;
+  width: 469px;
+  height: 41px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+select {
+  -webkit-appearance: none; /* für Chrome und Safari */
+  -moz-appearance: none; /* für Firefox */
+  appearance: none;
+  background-size: 4px;
+}
+
+select {
+  position: relative;
+  background: #fff;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+select::after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+#bereich1 {
+  margin-top: 6px;
+  background-color: #ffb3f4;
+  width: 287px;
+  height: 19px;
+  padding: 10px;
+}
+
+#bereich2 {
+  margin-top: 10px;
+  background-color: #ff64e2;
+  width: 287px;
+  height: 19px;
+  padding: 10px;
+}
+
+#bereich3 {
+  margin-top: 10px;
+  background-color: #ff571d;
+  width: 287px;
+  height: 19px;
+  padding: 10px;
+}
+
+#bereich4 {
+  color: white;
+
+  margin-top: 10px;
+  background-color: #a31b00;
+  width: 287px;
+  height: 19px;
+  padding: 10px;
+}
+
+#bereich5 {
+  color: white;
+  margin-top: 10px;
+  background-color: #541200;
+  width: 287px;
+  height: 19px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+/*
+.dropdown content {
+  
+  }
+*/
+/* Style für die aufklappbaren Buttons */
+.accordion {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+/* Wenn der Button aktiviert ist (aufgeklappt) */
+.accordion.active {
+  background-color: #ccc;
+}
+
+/* Style für den Textbereich, der sich aufklappen lässt */
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

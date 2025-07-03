@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bb9bbf1455e0c89fff3829c434792cab1d62f1a3ed991bc44f04621925363c1
-size 742
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ffe200;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.3, SVG Export Plug-In . SVG Version: 1.2.0 Build 164)  -->
+  <g>
+    <g id="Ebene_1">
+      <g id="Ebene_1-2" data-name="Ebene_1">
+        <g id="Ebene_1-2">
+          <g id="Ebene_1-2-2" data-name="Ebene_1-2">
+            <polygon class="cls-1" points="12.1 4 14.1 10.4 20.9 10.4 15.5 14.4 17.6 20.7 12.1 16.8 6.7 20.7 8.7 14.4 3.3 10.4 10 10.4 12.1 4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

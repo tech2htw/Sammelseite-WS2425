@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:097467ea23816ee997aeca1d5f851d255ba5dafbd7ff53bbdccc87c719887b55
-size 912
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentaion zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/Friedhofsbestand-Berlin.geojson", function(data) {
+	var mapHTW = L.geoJSON(data, {
+	style: {},
+	pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: iconSwimpants});
+	},
+	onEachFeature: funktionenStandorte,
+	}).addTo(map);
+});
+
+// Einbinden des Piktogramm als Icon
+var iconSwimpants = L.icon({
+	iconUrl: 'img/grab.jpg',
+	iconSize: [32],
+});
+
+// Diese Funktion wird für jedes Feature ausgeführt (Popup anbinden an jeden Standort)
+function funktionenStandorte(feature, layer){
+	var titel;
+
+	if(feature.properties["name"]){
+		titel = feature.properties["name"] 
+	} else {
+		titel = "Friedhof";
+	}
+
+	var content = 	"<b>"
+					+ titel
+					+ "</b><br>" 
+					+ feature.properties["name"];
+
+	layer.bindPopup(content);
+}
+

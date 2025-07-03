@@ -1,3 +1,117 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26555de086eed41a0a898f8615133ab451fca77cc7f35432f57364b76535a94a
-size 1674
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Archivo Narrow', serif;
+	background: #000000;
+}
+
+#card {
+	width: 78vw;
+	max-width: 800px;
+	height: 1200px;
+	background: radial-gradient(circle 700px, #e400b1, #000000);
+	padding: 3rem;
+	margin: 2rem auto;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 1px 1px 23px #fffc09;
+}
+
+h1 {
+	font-size: 4.6rem;
+	text-align: center;
+	margin: 0;
+	margin-bottom: -0.1rem;
+	margin-top: 2rem;
+	color: #f8f8f8;
+}
+
+h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 0.3rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
+	color: #f8f8f8;
+}
+
+h2 a {
+	color: #e2ff09;
+	text-decoration: none;
+	font-weight: 749;
+
+	
+}
+
+p1  {
+	color: #ffffff;
+	margin-top: -1.7rem;
+	font-size: 1.4rem;
+	position: absolute; top: 928px; left: 100px; right: 100px
+
+}
+
+p  {
+	color: #ffffff;
+	margin-top: -0.6rem;
+	font-size: 1rem;
+	position: absolute; top: 988px; left: 100px; right: 100px
+
+}
+
+p3  {
+	color: #ffffff;
+	margin-top: -0.6rem;
+	font-size: 1rem;
+	position: absolute; top: 1156px; left: 100px; right: 100px
+
+}
+
+
+
+#map-container {
+	height: 500px;
+	background: radial-gradient(circle 200px, #e400b1, #000000);
+	margin-bottom: 1.1rem
+}
+
+.kontakt {
+	margin-top: 0.1rem;
+	margin-right: 3rem;
+	margin-bottom: 0.1rem;
+	float: left;
+	font-size: 0.9rem;
+	color: #ffffff;
+		
+}
+
+.kontakt img {
+	vertical-align: middle;
+	width: 30px; 
+    height: auto;
+}
+
+.kontakt2 {
+	position: absolute; top: 1220px; left: 380px; 
+	float: left;
+	font-size: 1.2rem;
+	color: #ffffff;	
+		
+}
+
+.kontakt2 img {
+	vertical-align: middle;
+	width: 49px; 
+    height: auto;
+}
+
+.kontakt2 a {
+	color: #e400b1;
+	text-decoration: none;
+	font-weight: 749;
+	
+}
+
+.clear {
+	clear: both;
+}

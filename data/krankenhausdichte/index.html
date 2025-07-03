@@ -1,3 +1,87 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b51f098bc66817bf2a051a55e7f7714527082bd14ff89da825ab3451eece0fed
-size 2983
+<!doctype html>
+<html lang="de">
+	<head>
+		 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Krankenhäser</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+		
+	</head>
+
+	<body>
+		<div id="card">
+			
+        <h1>Sind die Krankenhäuser gleichmäßig in Berlin verteilt? </h1>
+        <h2>gemacht von
+            <a href="https://test.com">Elisabet Orlova</a>
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			  
+	
+		<div id="beschriftung" style="margin-top: 20px;">
+<div id="legende"></div>
+    <span class="links">hoch</span>
+    <span class="rechts">niedrig</span>
+</div>
+
+			
+			
+			<!-- Тумблер -->
+        <div class="toggle-container">
+    <div class="toggle">
+        <div class="toggle-knob"></div>
+    </div>
+    <span class="toggle-text"><b>Krankenhäuser</b></span> <!-- Текст рядом с тумблером --></div>
+			<p>
+				In Deutschland kommen auf <b>1.000 Einwohner etwa 6 Betten</b>, was über dem EU-Durchschnitt von 3,93 Betten liegt. Experten weisen jedoch darauf hin, dass eine hohe Zahl an Krankenhäusern nicht zwangsläufig eine bessere medizinische Versorgung bedeutet
+			<p>
+				Das Projekt wirft die Frage nach der <b>Gleichmäßigkeit und Effizienz der Ressourcenzuteilung</b> in Berlin auf. 
+			</p>
+<p>
+Die Daten zeigen, dass die Anzahl der Krankenhausbetten pro Bezirk von <b>3,5</b> bis <b>11 Betten</b> variiert, was auf eine deutliche Ungleichmäßigkeit hinweist.			</p>
+			<div class="social-links">
+    <div class="kontakt">
+        <img src="img/instagram.svg" class="icon" />
+        <a href="https://www.instagram.com/elissorl/" target="_blank" rel="noopener noreferrer" >Instagram</a>
+    </div>
+
+   <div class="kontakt">
+    <img src="img/behance.svg" class="icon" />
+    <a href="https://www.behance.net/elisorlova/projects" target="_blank" rel="noopener noreferrer">Behance</a>
+</div>
+
+</div>
+
+
+			<div class="clear"></div>
+		</div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/2-standorte.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/3-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

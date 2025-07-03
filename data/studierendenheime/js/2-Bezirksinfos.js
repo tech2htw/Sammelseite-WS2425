@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:571eca3d0930aef2027193586179d4d6cb8b111b96e71068c7fc749fb4f64083
-size 915
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentaion zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/Bezirksinfo.geojson", function(data) {
+	var mapHTW = L.geoJSON(data, {
+	style: {},
+	pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: iconSwimpants});
+	},
+	onEachFeature: funktionenStandorte,
+	}).addTo(map);
+});
+
+// Einbinden des Piktogramm als Icon
+var iconSwimpants = L.icon({
+	iconUrl: 'img/swimpants.svg',
+	iconSize: [32],
+});
+
+// Diese Funktion wird für jedes Feature ausgeführt (Popup anbinden an jeden Standort)
+function funktionenStandorte(feature, layer){
+	var titel;
+
+	if(feature.properties["namgem"]){
+		titel = feature.properties["namgem"] 
+	} else {
+		titel = "Bezirksinfo ";
+	}
+
+	var content = 	"<b>"
+					+ titel
+					+ "</b><br>" 
+					+ feature.properties["namlag"];
+
+	layer.bindPopup(content);
+}
+

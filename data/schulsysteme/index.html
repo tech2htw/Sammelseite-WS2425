@@ -1,3 +1,116 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6544a0898f054dabc2726299d5c0a88097870e25048669582e1749ef03c7272
-size 3841
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Datenvisualisierung mit Hallenbädern</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+    </style>
+
+    <!-- Laden von Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin></script>
+
+    <!-- Laden von jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="card">
+      <h1>Schulsysteme im Zusammenhang</h1>
+      <h2>
+        <b>Wie hängen der Schultyp (öffentlich oder privat), 
+          die soziale Herkunft, der sozioökonomische Status 
+          und die Bezirke miteinander zusammen?
+        </b>
+      </h2>
+
+      <!-- Leerer Container, in den nachher die Karte kommt -->
+      <div id="map-container"></div>
+
+      <h3>Ebenen ein- und ausschalten</h3>
+      <div id="Checkboxes">
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="CheckboxPrivate">
+            Private Schulen
+          </label>
+          <label>
+            <input type="checkbox" id="CheckboxOeffentliche">
+            Öffentliche Schulen
+          </label>
+        </div>
+  
+        
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="CheckboxSZBezirke" checked>
+            Soziale Lage
+          </label>
+          <label>
+            <input type="checkbox" id="CheckboxBerlinBezirke" checked>
+            Bezirke
+          </label>
+        </div>
+
+
+        <div id="legende-container">
+          <img src="img/legende.svg" alt="Legende" />
+          </div>
+        </div>
+
+      <hr>
+      
+      <p class="text">
+        Das Klischee besagt, dass private Schulen oft als exklusive Bildungseinrichtungen 
+        für wohlhabende Familien gelten und daher nur für eine privilegierte Minderheit 
+        zugänglich sind. Es wird angenommen, dass diese Schulen vor allem in finanzstarken
+        Bezirken zu finden sind und Schüler*innen aus einkommensstarken Familien bevorzugen.
+        Dieses Projekt zielt darauf ab, diese Annahme zu überprüfen und ein differenziertes Bild
+        der tatsächlichen Verteilung und Zugänglichkeit privater Schulen in Berlin zu zeichnen.
+        <br><br><br><br>
+        Die Frage, wie Schulart, soziale Herkunft und regionale Verteilung miteinander 
+        zusammenhängen, ist zentral für dieses Projekt. Es wird untersucht, ob ein 
+        Zusammenhang besteht zwischen der Wahl von öffentlichen oder privaten Schulen, 
+        der sozialen Herkunft der Schüler*innen und den Bezirken, in denen sie leben. 
+        Dieses Konzept beleuchtet dabei die unterschiedlichen Dynamiken und Muster in 
+        der Berliner Schullandschaft. Inwiefer bestätigt es Ihre Annahme?
+        
+    
+      </p>
+      
+       
+      <p>
+        <br>
+      </p>
+
+      
+
+      <div class="kontakt">
+        <img src="img/mail.svg" class="icon" />
+        <a href="mailto:S0586125@Htw-Berlin.De "> KONTAKT </a>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <script src="js/0-setup.js"></script>
+    <script src="js/1-SZbezirke.js"></script>
+    <script src="js/2-oeffentlicheschulen.js"></script>
+    <script src="js/3-privatschulen.js"></script>
+    <script src="js/4-BerlinBezirke.js"></script>
+
+    <script src="../../script.js"></script>
+  </body>
+</html>

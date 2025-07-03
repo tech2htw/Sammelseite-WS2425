@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6082634c709616c4b76ef6aa51f97117916c653fea05ff0766450ee379fff35
-size 876
+// Erstellen einer Leaflet GeoJSON-Schicht und Hinzufügen zur Karte
+// Dokumentaion zum Styling der GeoJSON-Daten: https://leafletjs.com/reference.html#path
+
+$.getJSON("maps/friedhof-spezifisch.geojson", function(data) {
+	var mapFriedhofSpez = L.geoJSON(data, {
+		style: function (feature) {
+			return {
+				color: "#260c0c",
+				weight: 4,
+				fillColor: "#260c0c",
+				fillOpacity: 1
+			};
+		},
+		onEachFeature: funktionenStandorteSpez
+	}).addTo(map);
+	
+	//mapFriedhofSpez.bringToFront();
+});
+
+
+// Diese Funktion wird für jedes Feature ausgeführt (Popup anbinden an jeden Standort)
+function funktionenStandorteSpez(feature, layer){
+	var titel;
+
+	if(feature.properties["nam"]){
+		titel = feature.properties["nam"] 
+	} else {
+		titel = "Friedhof ";
+	}
+
+	var content = 	"<b>"
+					+ titel
+					+ "</b><br>" 
+					+ feature.properties["name"];
+
+	layer.bindPopup(content);
+}
+

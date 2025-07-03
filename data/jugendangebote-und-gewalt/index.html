@@ -1,3 +1,116 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0ad638fa9da25418395cfc4b851b83f8d0a6a9fe410fc19a3857b66cb2ed3e8
-size 3660
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Gefährliche Lücken</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet');
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>GEFÄHRLICHE LÜCKEN</h1>
+			<h2>
+				Bildungs- und Freizeiträume als Schlüssel zur Prävention
+			
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			
+			
+
+			
+			
+			<div class="kontakt">
+				<img src="img/Niedrig.png" class="icon" />
+				 Niedrige Gewaltbelastung Jugendliche
+			</div>
+			
+			<div class="kontakt">
+				<img src="img/wenig.png" class="icon" />
+				Mittelere Gewaltbelastung Jugendliche
+			</div>
+			
+			<div class="kontakt">
+				<img src="img/mittel.png" class="icon" />
+				Erhöhte Gewaltbelastung Jugendliche
+			</div>
+			
+			<div class="kontakt">
+				<img src="img/hoch.png" class="icon" />
+				Stark erhöhte Gewaltbelastung Jugendliche
+			</div>
+
+			
+			<p1>
+				
+			    <b>"Wie wirkt sich der Mangel an Bildungs- und Freizeitangeboten auf die Sicherheit und
+					das Verhalten von Jugendlichen aus?</b> 
+				
+			</p1>
+			
+			<p>
+				
+			    Genau diese Frage wird auf dieser Karte beantwortet. Das Poster veranschaulicht die Verteilung von
+				Schulen, Jugendfreizeiteinrichtungen und der Gewaltbelastung unter Jugendlichen in Berlin. Es zeigt
+				klar: In Gebieten, in denen es nur wenige Freizeit- und Bildungsmöglichkeiten gibt, ist die
+				Gewaltbelastung unter Jugendlichen signifikant höher. Die Karte verdeutlicht eindrücklich, wie ein
+				Mangel an Angeboten das Risiko für Gewalt, soziale Isolation und negative Entwicklungen erhöht. Sie ist
+				ein dringender Appell, gerade in benachteiligten Stadtteilen gezielt zu handeln. Investitionen in
+				Bildungs- und Freizeitangebote sind nicht nur eine Frage der Gerechtigkeit, sondern auch ein effektiver
+				Weg, um jungen Menschen Perspektiven zu bieten und soziale Probleme präventiv zu lösen.
+
+				
+			</p>
+			
+			<p3>
+				
+			    <b>Schauen Sie genauer hin, lassen Sie sich von den Daten inspirieren und setzen Sie sich aktiv dafür ein,
+					mehr Möglichkeiten für Jugendliche zu schaffen. Gemeinsam können wir Veränderung bewirken!</b>
+	
+			</p3>
+			
+			
+			
+			<div class="kontakt2">
+				<img src="img/Hilfe.png" class="icon" />
+				<a href="https://familienportal.berlin.de/artikel/hilfe-bei-persoenlichen-not-und-krisensituationen"> Unterstützung </a>
+			
+			</div>
+			
+            </div> 
+	
+	
+			<div class="clear"></div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/4-Schulen.js"></script>
+		<script src="js/5-Jugendfreizeiteinrichtungen.js"></script>
+		<script src="js/6-Gewaltbelastung.js"></script>
+		<script src="js/7-Gewaltbelastung1.js"></script>
+		<script src="js/8-Gewaltbelastung2.js"></script>
+		<script src="js/9-Gewaltbelastung3.js"></script>
+		<script src="js/10-Gewaltbelastung4.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

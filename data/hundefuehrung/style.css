@@ -1,3 +1,102 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a62cdad8742222ce82d0e244e5e36539156d1e3d041c1f2908ef1d67299ecfe
-size 1347
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+#card {
+  width: 80vw;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 3rem;
+  margin: 2rem auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 1px 1px 24px #9c9c9c;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+h2 a {
+  color: #2f6dac;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#map-container {
+  height: 460px;
+  background-color: #fff;
+}
+
+.kontakt {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  float: left;
+}
+
+.kontakt img {
+  vertical-align: middle;
+}
+
+.kontakt a {
+  text-decoration: none;
+  color: #2f6dac;
+  margin-left: 0.5rem;
+}
+
+.clear {
+  clear: both;
+}
+
+h3 {
+	margin-top: 40px;
+	margin-bottom: 8px;
+}
+
+#Checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: stretch;
+  user-select: none;
+  -webkit-user-select: none;  
+}
+
+#Checkboxes label {
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 4px;
+  width: 160px;
+  color: #e9f0f8;
+}
+
+.verbot {
+  background-color: #db2121;
+}
+
+.leine {
+  background-color: rgb(255, 198, 6);
+}
+
+.freilauf {
+  background-color: rgb(0, 198, 31);
+}
+
+.baden  {
+  background-color: rgb(0, 9, 255);
+}
+hr {
+	margin: 32px 0;
+}

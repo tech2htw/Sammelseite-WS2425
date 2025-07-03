@@ -1,3 +1,70 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b591d682ecf8df23585fff7549bd05d72c4afa865f1a53cda4f710306cb4b1c2
-size 2754
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Licht aus, Himmel an </title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+	</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>Licht aus, <br> Himmel an</h1>
+			<h2>
+				Sternenhimmel über Berlin
+				<a href="https://de.wikipedia.org/wiki/Der_Himmel_über_Berlin">Link</a>
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			 <p> <b>Wo kann ich in der Stadt noch den Sternenhimmel genießen?</b> <p>
+Die eingezeichneten <b>STAR SPOTS</b> euch Orte in Berlin, an denen der Nachthimmel theoretisch am klarsten zu sehen ist. Grundlage dafür sind 
+Daten zu Grünflächen <i>(grün)</i> und zur Beleuchtung <i>(gelb)</i>.
+Während Parks und andere unbebaute Flächen oft weniger beleuchtet sind, stören Straßenlaternen und andere Lichter den Blick in den Himmel. Die Karte kombiniert diese Informationen, um die dunkelsten und besten Plätze für Sternengucker*innen zu finden. <br> <br> Lichtverschmutzung ist ein zunehmend wichtiges Thema, denn sie beeinträchtigt nicht nur unsere Sicht auf die Sterne, sondern auch die natürliche Nachtlandschaft. Also packt eure Ferngläser ein, entdeckt die <b>STAR SPOTS</b> und lasst euch von Berlins verborgenem Nachthimmel faszinieren!</p>
+
+			<div class="kontakt">
+				<img src="img/home2.svg" class="icon" />
+				<a href="https://sternenhimmel-fotografieren.de/orientierung-am-nachthimmel-polaris-finden/"> Sternenhimmel erklärt!</a>
+			</div>
+
+			<div class="kontakt">
+				<img src="img/mail.svg" class="icon" />
+				<a href="meike.dieckmann@icloud.com"> Emailadresse </a>
+			</div>
+			
+		
+
+			<div class="clear"></div>
+		</div>
+		
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-natur.js"></script>
+		<script src="js/2-natur2.js"></script>
+		<script src="js/3-Licht.js"></script>
+		<script src="js/4-land.js"></script>
+		<script src="js/5-spots.js"></script>
+		
+		<script src="../../script.js"></script>
+<hr>
+	</body>
+</html>

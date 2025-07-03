@@ -1,3 +1,92 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea29ce094987fd0b24256cd3c57aff23e40367e12f5f18b59cba88e7ac942fed
-size 3592
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Datenvisualisierung mit Hallenbädern</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+
+		<!-- Laden von jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>Begräbnisorte für Opfer von Krieg und Gewalt</h1>
+			<h2>
+				
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+			
+			
+
+<!-- Legende hinzufügen -->
+<div id="legend">
+    <h3>Legende</h3>
+    <ul>
+        <li>
+            <span class="legend-icon red-square"></span>
+            Friedhöfe
+        </li>
+        <li>
+            <span class="legend-icon burial-icon"></span>
+            Begräbnisorte für Kriegsgefallene
+        </li>
+    </ul>
+</div>
+			
+
+
+
+			<p>
+				Die folgende Karte visualisiert  alle geöffneten und geschlossenen Berliner Friedhöfe nach ihrem Träger einschließlich der drei großen sowjetischen Ehrenmale in Treptow, Schönholz und Tiergarten. 
+Die Icons auf der Karte beziehen sich auf die Darstellung aller Begräbnisplätze der Opfer von Krieg und Gewaltherrschaft, die in der Zuständigkeit des Landes Berlin liegen, auf den dargestellten Friedhöfen. In Berlin und auf Berliner Friedhöfen im Umland werden auf rd. 170 Begräbnisplätzen etwa 120.000 Gräber mit rd. 150.000 Opfern im Sinne des Gräbergesetzes zum mahnenden Totengedenken erhalten und gepflegt. Dies ist 1/7 aller insgesamt in Deutschland unter das Gräbergesetz fallenden Opfergräber.
+
+Darunter befinden sich neben Einzelgräbern und geschlossenen Sammelgrabanlagen auf Friedhöfen auch einzelne Gräber außerhalb von Friedhöfen sowie reine Soldatenfriedhöfe, z.B. die sowjetischen Ehrenmale, die Friedhöfe bzw. Grabanlagen mit Gefallenen der Commonwealth-Länder und die von internierten Italienern. Die Mehrzahl der Gräber der Opfer von Krieg und Gewaltherrschaft befindet sich jedoch auf den vielen landeseigenen und konfessionellen Friedhöfen im gesamten Stadtgebiet.
+			</p>
+			<p>
+				
+Mit diesem Projekt hoffe ich, das Bewusstsein für die kulturelle und historische Bedeutung dieser Friedhöfe zu schärfen und ihre Rolle als stille Zeugen einer bewegten Vergangenheit hervorzuheben.
+
+			</p>
+
+			<div class="kontakt">
+				<img src="img/mail.svg" class="icon" />
+				<a href="http://www.berliner-grabmale-retten.de/so-koennen-sie-helfen/"> Berliner Grabmale retten </a>
+			</div>
+
+			<div class="kontakt">
+				<img src="img/mail.svg" class="icon" />
+				<a href="https://www.berlin.de/sen/uvk/natur-und-gruen/stadtgruen/friedhoefe-und-begraebnisstaetten/kontakt/#Institutionen"> Vereine und Verbände </a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/2-standorte.js"></script>
+		<script src="js/3-standorte-2.js"></script>
+	
+		<script src="js/4-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+</html>

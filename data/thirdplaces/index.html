@@ -1,3 +1,111 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b7817f71dff23395d47d876dba44e7b8026ee644fd4eaeaf6d2c74cd4ab2d20
-size 3405
+<!doctype html>
+
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Kommerzialisierung des öffentlichen Raumes: "Third Spaces" in Berlin</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+		</style>
+
+		<!-- Laden von Leaflet -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin></script>
+
+		<!-- Laden von jQuery -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="card">
+			<h1>Kommerzialisierung des öffentlichen Raumes</h1>
+			<h2>
+				<a href="https://de.wikipedia.org/wiki/Dritter_Ort">"Third Spaces"</a>
+				in Berlin
+			</h2>
+
+			<!-- Leerer Container in den nachher meine Map kommt -->
+			<div id="map-container"></div>
+
+			<h3>Gebäudefilter & Legende</h3>
+		
+			<div id="Checkboxes">
+				<label>
+					<input type="checkbox" id="CheckboxI" checked>
+					I
+				</label>
+				<label>
+					<input type="checkbox" id="CheckboxII" >
+					II
+				</label>				
+				<label>
+					<input type="checkbox" id="CheckboxIII">
+					III
+				</label>
+			</div>
+			
+			<p>
+	
+			<div id="beschriftung">
+				<span>0%</span>
+				<span class="rechts">100%</span>
+				<div id="legende"></div>
+			</div>
+			<div id="beschriftung2">
+				<span>*Anteil des kommerzialisierten öffentl. Raumes </span>
+				<span class="rechts"></span>
+				
+			</div>
+			
+			<hr>
+			
+			<p>
+				Ein <b> "Third Space"</b> bezeichnet einen Ort außerhalb der eigenen Wohnung (First Space) und Arbeit (Second Space), 
+				der sozialen Austausch, Begegnung und Gemeinschaft ermöglicht. Solche Orte sind gesellschaftlich wichtig, 
+				da sie zur sozialen Integration, kreativen Entfaltung und dem demokratischen Zusammenleben beitragen. 
+				Es sind Orte, an denen sich Menschen verschiedener Umfelde begegnen.
+			</p>
+			<p>
+				Diese Darstellung visualisiert die Verteilung von öffentlich zugänglichem, nicht-kommerziellem Raum 
+				in den Berliner Bezirken. <b>Wie viele Gebäude sind für die Allgemeinheit nutzbar?</b>
+				<p>
+					<b>Kategorie I:</b> Bedingungslos <br>
+					<b>Kategorie II:</b> Religionsabhängig <br>
+					<b>Kategorie III:</b> Profitorientiert <br>
+			</p>
+			<p>
+				 
+				<i>Die Visualisierung soll Bewusstsein für die Bedeutung dieser Orte schaffen und ihre 
+				bedrohte Existenz im Kontext wachsender Privatisierung und Kommerzialisierung sichtbar machen.</i>
+			</p>
+
+			<div class="kontakt">
+				<img src="img/Fragezeichen.svg" height="25px" class="icon" />
+				<a href="https://www.proquest.com/openview/1e24371f48306e0197e3bc29ccab93f0/1?pq-origsite=gscholar&cbl=18750&diss=y"> <i>mehr zur Thematik</i> </a>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<script src="js/0-setup.js"></script>
+		<script src="js/1-bezirke.js"></script>
+		<script src="js/2-Stufe-I.js"></script>
+		<script src="js/2.1-Stufe-II.js"></script>
+		<script src="js/2.2-Stufe-III.js"></script>
+		<script src="js/3-land.js"></script>
+
+		<script src="../../script.js"></script>
+	</body>
+	
+</html>
