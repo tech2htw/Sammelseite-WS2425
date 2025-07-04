@@ -43,27 +43,27 @@ h2 a {
 	
 }
 
-p1  {
+h3  {
 	color: #ffffff;
-	margin-top: -1.7rem;
+	margin-top: 8rem;
 	font-size: 1.4rem;
-	position: absolute; top: 928px; left: 100px; right: 100px
+	/* position: absolute; top: 928px; left: 100px; right: 100px */
 
 }
 
 p  {
 	color: #ffffff;
-	margin-top: -0.6rem;
+	margin-top: 1rem;
 	font-size: 1rem;
-	position: absolute; top: 988px; left: 100px; right: 100px
+	/* position: absolute; top: 988px; left: 100px; right: 100px */
 
 }
 
-p3  {
+h4  {
 	color: #ffffff;
-	margin-top: -0.6rem;
+	margin-top: 2em;
 	font-size: 1rem;
-	position: absolute; top: 1156px; left: 100px; right: 100px
+	/* position: absolute; top: 1156px; left: 100px; right: 100px */
 
 }
 
@@ -91,8 +91,14 @@ p3  {
     height: auto;
 }
 
+.grid {
+	display: grid;
+	align-items: center;
+}
+
 .kontakt2 {
-	position: absolute; top: 1220px; left: 380px; 
+	/* position: absolute; top: 1220px; left: 380px;  */
+	margin: 0 auto;
 	float: left;
 	font-size: 1.2rem;
 	color: #ffffff;	
